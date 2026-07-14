@@ -1,0 +1,6 @@
+__pycache__
+.DS_Store
+*.log
+
+# runtime outputs written by donation_bet monitorability scripts
+final_data/run_monitorability_outputs/
