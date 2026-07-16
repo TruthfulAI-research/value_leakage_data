@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Rollout Browser</title>
+<link rel="stylesheet" href="style.css?v=9">
+</head>
+<body>
+<header>
+  <h1>Rollout Browser</h1>
+  <div class="controls">
+    <label>Experiment
+      <select id="experiment"></select>
+    </label>
+    <label>Model
+      <select id="model"></select>
+    </label>
+    <label>Reasoning
+      <select id="effort"></select>
+    </label>
+    <label id="prompt-key-wrap"><span id="prompt-key-label">Question</span>
+      <select id="prompt-key"></select>
+    </label>
+    <label id="direction-wrap"><span id="direction-label">Scenario</span>
+      <select id="direction"></select>
+    </label>
+    <label id="answer-side-wrap">Final answer
+      <select id="answer-side">
+        <option value="all">ALL</option>
+        <option value="below">&le; threshold</option>
+        <option value="above">&gt; threshold</option>
+        <option value="unparsed">unparseable</option>
+      </select>
+    </label>
+    <label><span id="covertness-label">CoT covertness</span>
+      <select id="covertness"></select>
+    </label>
+  </div>
+  <div id="summary" class="summary"></div>
+</header>
+
+<main>
+  <section id="list" class="list"></section>
+  <section id="detail" class="detail">
+    <div class="placeholder">Select a rollout on the left to inspect its chain-of-thought and answer.</div>
+  </section>
+</main>
+
+<script src="app.js?v=13"></script>
+</body>
+</html>

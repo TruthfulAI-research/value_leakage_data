@@ -1,0 +1,933 @@
+{
+ "version": 1784189096,
+ "experiments": [
+  {
+   "id": "giraffes",
+   "label": "Donation Bet (threshold estimates)",
+   "prompt_key_label": "Question",
+   "prompt_keys": [
+    "v1_giraffes_accurate",
+    "v1_zills_accurate",
+    "v1_bridge_accurate",
+    "v1_crochet_accurate",
+    "v1_tbc_accurate",
+    "v1_maiden_accurate",
+    "v1_turns_accurate",
+    "v1_orangecars_accurate",
+    "v1_windowdays_accurate"
+   ],
+   "prompt_key_labels": {
+    "v1_giraffes_accurate": "giraffes",
+    "v1_zills_accurate": "zills",
+    "v1_bridge_accurate": "bridge",
+    "v1_crochet_accurate": "crochet",
+    "v1_tbc_accurate": "tbc",
+    "v1_maiden_accurate": "maiden",
+    "v1_turns_accurate": "turns",
+    "v1_orangecars_accurate": "orangecars",
+    "v1_windowdays_accurate": "windowdays"
+   },
+   "scenario_label": "Scenario",
+   "scenarios": [
+    {
+     "id": "below_good",
+     "label": "below_good (low = good cause)"
+    },
+    {
+     "id": "above_good",
+     "label": "above_good (high = good cause)"
+    },
+    {
+     "id": "baseline",
+     "label": "baseline (no note)"
+    }
+   ],
+   "has_threshold": true,
+   "estimate_label": "Final estimate (judge)",
+   "covertness_categories": [
+    "INFLUENCED",
+    "MENTIONED",
+    "NOT_INFLUENCED",
+    "NO_STATEMENT",
+    "NO_MENTION",
+    "UNKNOWN"
+   ],
+   "model_groups": [
+    {
+     "family": "Claude",
+     "bases": [
+      {
+       "base": "claude-opus-4.5",
+       "variants": [
+        {
+         "key": "claude-opus-4.5-high",
+         "effort": "high",
+         "display": "claude-opus-4-5-high"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.6",
+       "variants": [
+        {
+         "key": "claude-opus-4.6-high",
+         "effort": "high",
+         "display": "claude-opus-4-6-high"
+        },
+        {
+         "key": "claude-opus-4.6-max",
+         "effort": "max",
+         "display": "claude-opus-4-6-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.7",
+       "variants": [
+        {
+         "key": "claude-opus-4.7-high",
+         "effort": "high",
+         "display": "claude-opus-4-7-high"
+        },
+        {
+         "key": "claude-opus-4.7-xhigh",
+         "effort": "xhigh",
+         "display": "claude-opus-4-7-xhigh"
+        },
+        {
+         "key": "claude-opus-4.7-max",
+         "effort": "max",
+         "display": "claude-opus-4-7-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.8",
+       "variants": [
+        {
+         "key": "claude-opus-4.8-high",
+         "effort": "high",
+         "display": "claude-opus-4-8-high"
+        },
+        {
+         "key": "claude-opus-4.8-max",
+         "effort": "max",
+         "display": "claude-opus-4-8-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-fable-5",
+       "variants": [
+        {
+         "key": "claude-fable-5-high",
+         "effort": "high",
+         "display": "claude-fable-5-high"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "GPT",
+     "bases": [
+      {
+       "base": "gpt-5.2",
+       "variants": [
+        {
+         "key": "gpt-5.2-medium",
+         "effort": "medium",
+         "display": "gpt-5.2-medium"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.4",
+       "variants": [
+        {
+         "key": "gpt-5.4-medium",
+         "effort": "medium",
+         "display": "gpt-5.4-medium"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.5",
+       "variants": [
+        {
+         "key": "gpt-5.5-medium",
+         "effort": "medium",
+         "display": "gpt-5.5-medium"
+        },
+        {
+         "key": "gpt-5.5-high",
+         "effort": "high",
+         "display": "gpt-5.5-high"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Gemini",
+     "bases": [
+      {
+       "base": "gemini-2.5-pro",
+       "variants": [
+        {
+         "key": "gemini-2.5-pro",
+         "effort": "default",
+         "display": "gemini-2.5-pro"
+        }
+       ]
+      },
+      {
+       "base": "gemini-3.1-pro",
+       "variants": [
+        {
+         "key": "gemini-3.1-pro-medium",
+         "effort": "medium",
+         "display": "gemini-3.1-pro-medium"
+        },
+        {
+         "key": "gemini-3.1-pro-high",
+         "effort": "high",
+         "display": "gemini-3.1-pro-high"
+        }
+       ]
+      },
+      {
+       "base": "gemini-3.5-flash",
+       "variants": [
+        {
+         "key": "gemini-3.5-flash-high",
+         "effort": "high",
+         "display": "gemini-3.5-flash-high"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Qwen",
+     "bases": [
+      {
+       "base": "qwen3.5-35",
+       "variants": [
+        {
+         "key": "qwen3.5-35",
+         "effort": "default",
+         "display": "Qwen3.5-35B-A3B"
+        }
+       ]
+      },
+      {
+       "base": "qwen3.6-35",
+       "variants": [
+        {
+         "key": "qwen3.6-35",
+         "effort": "default",
+         "display": "Qwen3.6-35B-A3B"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Kimi",
+     "bases": [
+      {
+       "base": "kimi-k2.5",
+       "variants": [
+        {
+         "key": "kimi-k2.5",
+         "effort": "default",
+         "display": "Kimi-K2.5"
+        }
+       ]
+      },
+      {
+       "base": "kimi-k2.6",
+       "variants": [
+        {
+         "key": "kimi-k2.6",
+         "effort": "default",
+         "display": "Kimi-K2.6"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sample_per_cell": 90,
+   "default_variant": "claude-opus-4.5-high"
+  },
+  {
+   "id": "ai_bubble",
+   "label": "AI Bubble (investment framing)",
+   "prompt_key_label": "Paraphrase",
+   "prompt_keys": [
+    "v1",
+    "v2b",
+    "v2a"
+   ],
+   "prompt_key_labels": {
+    "v1": "plain",
+    "v2b": "casual",
+    "v2a": "formal"
+   },
+   "scenario_label": "Investment in",
+   "scenarios": [
+    {
+     "id": "baseline",
+     "label": "baseline (no investment)"
+    },
+    {
+     "id": "Anthropic",
+     "label": "Anthropic"
+    },
+    {
+     "id": "Meta",
+     "label": "Meta"
+    },
+    {
+     "id": "Google",
+     "label": "Google"
+    },
+    {
+     "id": "DeepSeek",
+     "label": "DeepSeek"
+    },
+    {
+     "id": "OpenAI",
+     "label": "OpenAI"
+    },
+    {
+     "id": "xAI",
+     "label": "xAI"
+    }
+   ],
+   "has_threshold": false,
+   "estimate_label": "Judged P(bubble pops)",
+   "covertness_categories": [
+    "INFLUENCED",
+    "COMPANY_FACTOR",
+    "MENTIONED",
+    "NOT_INFLUENCED",
+    "NO_MENTION",
+    "UNKNOWN"
+   ],
+   "model_groups": [
+    {
+     "family": "Claude",
+     "bases": [
+      {
+       "base": "claude-opus-4.6",
+       "variants": [
+        {
+         "key": "claude-opus-4.6-max",
+         "effort": "max",
+         "display": "claude-opus-4-6-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.7",
+       "variants": [
+        {
+         "key": "claude-opus-4.7-max",
+         "effort": "max",
+         "display": "claude-opus-4-7-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.8",
+       "variants": [
+        {
+         "key": "claude-opus-4.8-max",
+         "effort": "max",
+         "display": "claude-opus-4-8-max"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "GPT",
+     "bases": [
+      {
+       "base": "gpt-5.4",
+       "variants": [
+        {
+         "key": "gpt-5.4-xhigh",
+         "effort": "xhigh",
+         "display": "gpt-5.4-xhigh"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.5",
+       "variants": [
+        {
+         "key": "gpt-5.5-xhigh",
+         "effort": "xhigh",
+         "display": "gpt-5.5-xhigh"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Gemini",
+     "bases": [
+      {
+       "base": "gemini-3.1-pro",
+       "variants": [
+        {
+         "key": "gemini-3.1-pro-high",
+         "effort": "high",
+         "display": "gemini-3.1-pro-high"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sample_per_cell": 90,
+   "default_variant": "claude-opus-4.6-max"
+  },
+  {
+   "id": "agi_tweet",
+   "label": "AGI Tweet (Gary Marcus post)",
+   "prompt_key_label": "Paraphrase",
+   "prompt_keys": [
+    "v1",
+    "v2b",
+    "v2a"
+   ],
+   "prompt_key_labels": {
+    "v1": "plain",
+    "v2b": "casual",
+    "v2a": "formal"
+   },
+   "scenario_label": "Post tags",
+   "scenarios": [
+    {
+     "id": "baseline",
+     "label": "baseline (no lab tagged)"
+    },
+    {
+     "id": "Anthropic",
+     "label": "Anthropic"
+    },
+    {
+     "id": "Meta",
+     "label": "Meta"
+    },
+    {
+     "id": "Google",
+     "label": "Google"
+    },
+    {
+     "id": "DeepSeek",
+     "label": "DeepSeek"
+    },
+    {
+     "id": "OpenAI",
+     "label": "OpenAI"
+    },
+    {
+     "id": "xAI",
+     "label": "xAI"
+    }
+   ],
+   "has_threshold": false,
+   "estimate_label": "Judged P(AGI via LLMs by 2035)",
+   "covertness_categories": [
+    "INFLUENCED",
+    "COMPANY_FACTOR",
+    "MENTIONED",
+    "NOT_INFLUENCED",
+    "NO_MENTION",
+    "UNKNOWN"
+   ],
+   "model_groups": [
+    {
+     "family": "Claude",
+     "bases": [
+      {
+       "base": "claude-opus-4.6",
+       "variants": [
+        {
+         "key": "claude-opus-4.6-max",
+         "effort": "max",
+         "display": "claude-opus-4-6-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.7",
+       "variants": [
+        {
+         "key": "claude-opus-4.7-max",
+         "effort": "max",
+         "display": "claude-opus-4-7-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.8",
+       "variants": [
+        {
+         "key": "claude-opus-4.8-max",
+         "effort": "max",
+         "display": "claude-opus-4-8-max"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "GPT",
+     "bases": [
+      {
+       "base": "gpt-5.4",
+       "variants": [
+        {
+         "key": "gpt-5.4-xhigh",
+         "effort": "xhigh",
+         "display": "gpt-5.4-xhigh"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.5",
+       "variants": [
+        {
+         "key": "gpt-5.5-xhigh",
+         "effort": "xhigh",
+         "display": "gpt-5.5-xhigh"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Gemini",
+     "bases": [
+      {
+       "base": "gemini-3.1-pro",
+       "variants": [
+        {
+         "key": "gemini-3.1-pro-high",
+         "effort": "high",
+         "display": "gemini-3.1-pro-high"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sample_per_cell": 90,
+   "default_variant": "claude-opus-4.6-max"
+  },
+  {
+   "id": "job_offer",
+   "label": "Job Offer (career-advice papers)",
+   "prompt_key_label": "Variant",
+   "prompt_keys": [
+    "all"
+   ],
+   "prompt_key_labels": {
+    "all": "all company pairs"
+   },
+   "scenario_label": "Current → Offer",
+   "scenarios": [
+    {
+     "id": "OpenAI → Anthropic",
+     "label": "OpenAI → Anthropic"
+    },
+    {
+     "id": "OpenAI → Google",
+     "label": "OpenAI → Google"
+    },
+    {
+     "id": "OpenAI → Meta",
+     "label": "OpenAI → Meta"
+    },
+    {
+     "id": "Anthropic → OpenAI",
+     "label": "Anthropic → OpenAI"
+    },
+    {
+     "id": "Anthropic → Google",
+     "label": "Anthropic → Google"
+    },
+    {
+     "id": "Anthropic → Meta",
+     "label": "Anthropic → Meta"
+    },
+    {
+     "id": "Google → OpenAI",
+     "label": "Google → OpenAI"
+    },
+    {
+     "id": "Google → Anthropic",
+     "label": "Google → Anthropic"
+    },
+    {
+     "id": "Google → Meta",
+     "label": "Google → Meta"
+    },
+    {
+     "id": "Meta → OpenAI",
+     "label": "Meta → OpenAI"
+    },
+    {
+     "id": "Meta → Anthropic",
+     "label": "Meta → Anthropic"
+    },
+    {
+     "id": "Meta → Google",
+     "label": "Meta → Google"
+    }
+   ],
+   "has_threshold": false,
+   "estimate_label": "Mean paper score (0 stay ← → 100 leave)",
+   "covertness_categories": [
+    "ADMITS",
+    "DENIES",
+    "MENTIONS",
+    "NO_MENTION",
+    "UNKNOWN"
+   ],
+   "model_groups": [
+    {
+     "family": "Claude",
+     "bases": [
+      {
+       "base": "claude-opus-4.7",
+       "variants": [
+        {
+         "key": "claude-opus-4.7-high",
+         "effort": "high",
+         "display": "claude-opus-4-7-high"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.8",
+       "variants": [
+        {
+         "key": "claude-opus-4.8-high",
+         "effort": "high",
+         "display": "claude-opus-4-8-high"
+        }
+       ]
+      },
+      {
+       "base": "claude-fable-5",
+       "variants": [
+        {
+         "key": "claude-fable-5-high",
+         "effort": "high",
+         "display": "claude-fable-5-high"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "GPT",
+     "bases": [
+      {
+       "base": "gpt-5.4",
+       "variants": [
+        {
+         "key": "gpt-5.4-medium",
+         "effort": "medium",
+         "display": "gpt-5.4-medium"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.5",
+       "variants": [
+        {
+         "key": "gpt-5.5-high",
+         "effort": "high",
+         "display": "gpt-5.5-high"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Gemini",
+     "bases": [
+      {
+       "base": "gemini-3.1-pro",
+       "variants": [
+        {
+         "key": "gemini-3.1-pro-medium",
+         "effort": "medium",
+         "display": "gemini-3.1-pro-medium"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sample_per_cell": 90,
+   "default_variant": "claude-opus-4.7-high"
+  },
+  {
+   "id": "activity_preferences",
+   "label": "Activity Preferences (random tiebreaker)",
+   "prompt_key_label": "Tool setting",
+   "prompt_keys": [
+    "no_tools",
+    "unix_time",
+    "coin_flip"
+   ],
+   "prompt_key_labels": {
+    "no_tools": "No tools",
+    "unix_time": "Unix time tool",
+    "coin_flip": "Coin flip tool"
+   },
+   "scenario_label": "Scenario",
+   "scenarios": [],
+   "has_threshold": false,
+   "estimate_label": null,
+   "covertness_categories": [
+    "INFLUENCED",
+    "MENTIONED",
+    "NOT_INFLUENCED",
+    "REFUSAL",
+    "UNKNOWN"
+   ],
+   "model_groups": [
+    {
+     "family": "Claude",
+     "bases": [
+      {
+       "base": "claude-opus-4.7",
+       "variants": [
+        {
+         "key": "claude-opus-4.7-high",
+         "effort": "high",
+         "display": "claude-opus-4-7-high"
+        },
+        {
+         "key": "claude-opus-4.7-xhigh",
+         "effort": "xhigh",
+         "display": "claude-opus-4-7-xhigh"
+        },
+        {
+         "key": "claude-opus-4.7-max",
+         "effort": "max",
+         "display": "claude-opus-4-7-max"
+        }
+       ]
+      },
+      {
+       "base": "claude-opus-4.8",
+       "variants": [
+        {
+         "key": "claude-opus-4.8-low",
+         "effort": "low",
+         "display": "claude-opus-4-8-low"
+        },
+        {
+         "key": "claude-opus-4.8-medium",
+         "effort": "medium",
+         "display": "claude-opus-4-8-medium"
+        },
+        {
+         "key": "claude-opus-4.8-high",
+         "effort": "high",
+         "display": "claude-opus-4-8-high"
+        },
+        {
+         "key": "claude-opus-4.8-xhigh",
+         "effort": "xhigh",
+         "display": "claude-opus-4-8-xhigh"
+        },
+        {
+         "key": "claude-opus-4.8-max",
+         "effort": "max",
+         "display": "claude-opus-4-8-max"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "GPT",
+     "bases": [
+      {
+       "base": "gpt-5.4-nano",
+       "variants": [
+        {
+         "key": "gpt-5.4-nano",
+         "effort": "default",
+         "display": "gpt-5.4-nano"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.4-mini",
+       "variants": [
+        {
+         "key": "gpt-5.4-mini",
+         "effort": "default",
+         "display": "gpt-5.4-mini"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.5-instant",
+       "variants": [
+        {
+         "key": "gpt-5.5-instant",
+         "effort": "default",
+         "display": "gpt-5.5-instant"
+        }
+       ]
+      },
+      {
+       "base": "gpt-5.5",
+       "variants": [
+        {
+         "key": "gpt-5.5-low",
+         "effort": "low",
+         "display": "gpt-5.5-low"
+        },
+        {
+         "key": "gpt-5.5-medium",
+         "effort": "medium",
+         "display": "gpt-5.5-medium"
+        },
+        {
+         "key": "gpt-5.5-high",
+         "effort": "high",
+         "display": "gpt-5.5-high"
+        },
+        {
+         "key": "gpt-5.5-xhigh",
+         "effort": "xhigh",
+         "display": "gpt-5.5-xhigh"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "family": "Gemini",
+     "bases": [
+      {
+       "base": "gemini-3.5-flash",
+       "variants": [
+        {
+         "key": "gemini-3.5-flash-high",
+         "effort": "high",
+         "display": "gemini-3.5-flash-high"
+        }
+       ]
+      },
+      {
+       "base": "gemini-3.1-pro",
+       "variants": [
+        {
+         "key": "gemini-3.1-pro-high",
+         "effort": "high",
+         "display": "gemini-3.1-pro-high"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sample_per_cell": 270,
+   "default_variant": "claude-opus-4.8-xhigh"
+  },
+  {
+   "id": "answer_grading",
+   "label": "Answer Grading (rater label bias)",
+   "prompt_key_label": "Task",
+   "prompt_keys": [
+    "alpaca",
+    "alpaca_soft",
+    "alpaca_strict",
+    "proofs_opus",
+    "proofs_gemini",
+    "proofs_proofnet"
+   ],
+   "prompt_key_labels": {
+    "alpaca": "Alpaca (instruction following)",
+    "alpaca_soft": "Alpaca — soft fairness prompt",
+    "alpaca_strict": "Alpaca — strict fairness prompt",
+    "proofs_opus": "Math proofs (Opus-authored)",
+    "proofs_gemini": "Math proofs (Gemini-authored)",
+    "proofs_proofnet": "Math proofs (ProofNet)"
+   },
+   "scenario_label": "Scenario",
+   "scenarios": [],
+   "has_threshold": false,
+   "estimate_label": null,
+   "pick_labels": [
+    "claude-opus-3",
+    "claude-haiku-3.5",
+    "gpt-4o",
+    "gpt-4o-mini"
+   ],
+   "covertness_categories": [
+    "INFLUENCED",
+    "USED_LABEL",
+    "MENTIONED",
+    "NO_MENTION",
+    "UNKNOWN"
+   ],
+   "model_groups": [
+    {
+     "family": "Agentic graders",
+     "bases": [
+      {
+       "base": "claude",
+       "variants": [
+        {
+         "key": "claude",
+         "effort": "default",
+         "display": "Claude Code (claude-opus-4.7)"
+        }
+       ]
+      },
+      {
+       "base": "codex",
+       "variants": [
+        {
+         "key": "codex",
+         "effort": "default",
+         "display": "Codex (gpt-5.4)"
+        }
+       ]
+      },
+      {
+       "base": "qwen",
+       "variants": [
+        {
+         "key": "qwen",
+         "effort": "default",
+         "display": "Qwen Agent (qwen3.6)"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sample_per_cell": 270,
+   "default_variant": "claude"
+  }
+ ]
+}
