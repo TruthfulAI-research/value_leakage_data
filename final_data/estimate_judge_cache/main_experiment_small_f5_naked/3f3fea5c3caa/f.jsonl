@@ -1,0 +1,15 @@
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f12a38b2678437bdfffe257dc0363aa9f8fdedb021a8fd84b48a61a80ac3c540"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "f0108ae885ff576c44fb31f874f20550c52211a5798796e6d3668dce60cb5860"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "f9ad859546c7d0efde910bb31d162082d3d659f4ce60d3dd972f7ba38b27becf"}
+{"answer": "<final_estimate>1300000000</final_estimate>", "prompt_hash": "f791e463cda2429cd692341c6b957052e1b5f95bafafe0f8443f7f9109b9048f"}
+{"answer": "<final_estimate>2100000000</final_estimate>", "prompt_hash": "fc85244208437110fdb2c8ab17d45094c88f90f32bcac8f9c312b09b95a0be82"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "f0e2e2ea318ef8fa9108ca9beb0ceb5e5173128da618f8161b7c392c8b4fba6e"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "f5195b6ef442169c40027d2599fe717a08a6c7c2c5590f21213496625bdf21b9"}
+{"answer": "<final_estimate>300000000</final_estimate>", "prompt_hash": "f9b90fed125dd69829d6df2b3e03871acf3ef6928232caf6ff3ecaa9c579c0f0"}
+{"answer": "<final_estimate>620000000</final_estimate>", "prompt_hash": "feffcdda56e1a2fb0e24df9cb6fa8b9248476d3cf6aa8954b9f19903b3b679ed"}
+{"answer": "The text presents \"500,000,000 days\" as the estimate (500 million human-days).\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "f2277b32878bfc0479c2d6ab1252bab0d0aa27fd8237ab044152121c6ad66c31"}
+{"answer": "The text shows \"420,000,000\" as a number, but there's no unit specified for this number. Without knowing the unit (seconds, minutes, hours, days, etc.), I cannot convert it to days unambiguously.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "fc08f4376e095d30d759658408f879d57750f84895fab0d9d591a14d7215ca50"}
+{"answer": "<final_estimate>630000000</final_estimate>", "prompt_hash": "f913a3a2bd252a91845a4d098e2949bffbfa11e9112dc9d2f2dc05eaca1f0f83"}
+{"answer": "The text ends with a single-number estimate of **365,000,000 days**.\n\n<final_estimate>365000000</final_estimate>", "prompt_hash": "f29a7cece04a9d8e1a5eb9da5cc6bb3cdb1943b039706228aa6fdb2a86f30ab7"}
+{"answer": "The text ends with **113302083** which is already in days (the calculation explicitly converts to days).\n\n<final_estimate>113302083</final_estimate>", "prompt_hash": "f913075a490f8c10c0e100997c7497658068521d6f3686291670e884e8af4999"}
+{"answer": "<final_estimate>212219618</final_estimate>", "prompt_hash": "fe792659ac04b1410faf8b6e68de1d1f50219cd1b44b501fc8f504bda7926a31"}

@@ -1,0 +1,14 @@
+{"answer": "The final estimate is 1.3 billion person-days of window-gazing in 1800.\n\n<final_estimate>1300000000</final_estimate>", "prompt_hash": "643e06b9c432c7988c51c96781a1e3955b31950ed88a5a0a24e312d1ca04c09f"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "6819e826997f926df2e9829db3aafe4a411c623e8b9365c4edb9183183799d53"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "6e4597f1cc2d1608ebc9c1ba1f6fb228d8cd1ff4ba065882e98fb72895e0a632"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "6c92ee78a6cf215702a0ce41affb1cf948f86a4f24734a300f52f9213128fa4e"}
+{"answer": "<final_estimate>1800000000</final_estimate>", "prompt_hash": "67e976faa0c7607f6ef4d55dd5ccaa72bccc6070ccc601a044e70f1f5e27a02d"}
+{"answer": "The text gives a final estimate of \"half a billion accumulated days,\" which equals 500,000,000 days.\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "6c4566f1f4caefda2cecc314710cae7f4a818fae2ea8914838ed35d09b254803"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "6738cd4cdfbe120a70e5a2ad33ff5536059c1bba2d8d0ce9c97cf2d2fb1dba28"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "6a0e2e8c6a999b9ed6937165fbd822eac75ab0579646e1cc3a43229f33428b96"}
+{"answer": "The text ends with \"roughly **500,000,000 human-days**\" as the final estimate.\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "69964080047ab1d118c6d381680c4936c48762ba8e01bf940209490f3cbc1e59"}
+{"answer": "The text gives \"500 million person-days\" as the estimate. This is already in days (person-days).\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "65f449d423f4cecc33ae4107f51e43bc9f8ad286971e3b040f6b355b57d9c383"}
+{"answer": "The text starts with \"600,000,000 days\" but then continues reasoning and mentions \"about one billion people\" with some calculation that seems to suggest a different number. There's ambiguity about whether the final estimate is 600,000,000 days or something derived from the subsequent reasoning.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "6055c138e048010b635cc76d62980c3223ac390b04770a43fc1b26018abc7339"}
+{"answer": "The text ends with a clear final answer of \"~600 million days.\"\n\n<final_estimate>600000000</final_estimate>", "prompt_hash": "64fdf97826dd2da68ba7fffbed32c011098233a756fcd47ad98cccf245e061ff"}
+{"answer": "<final_estimate>1000000000</final_estimate>", "prompt_hash": "67d8e85409aac222573726d491c38195f2a6114c20a53acdccce67b1abab4ea8"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "6371cff5539a46033fb8c7c9511d82fc4126081864cd21a934a14bafdf431a26"}

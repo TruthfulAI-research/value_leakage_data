@@ -1,0 +1,12 @@
+{"answer": "<final_estimate>1500000000</final_estimate>", "prompt_hash": "fa49de77cb0e9e57e72121a38285010fe1a315308be76226f89cf252a509d07f"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "f9dbede6a60728b810ebb8105ff50f7ef2fe2a3f3b9bb4d4bf4f17f70816cb86"}
+{"answer": "The text states \"one billion total person-days\" as the final estimate, which equals 1,000,000,000 days.\n\n<final_estimate>1000000000</final_estimate>", "prompt_hash": "f0117ec7661c059d422c23e5ec2bef525b915222fe564e1a752fbf825d681747"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f12a38b2678437bdfffe257dc0363aa9f8fdedb021a8fd84b48a61a80ac3c540"}
+{"answer": "<final_estimate>4500000000</final_estimate>", "prompt_hash": "ff1f750ce3d611f6c7bd75b97136adf142184a0c7a48ffc7263efc29e94b8be9"}
+{"answer": "<final_estimate>400000000</final_estimate>", "prompt_hash": "f02da9b10f0fe3da6c2a54a75f5fbaa1a27b18ada3052848bd6fc0f34204f73f"}
+{"answer": "<final_estimate>402000000</final_estimate>", "prompt_hash": "fd2600857d030ab2f6b9ac8f4af8ae710e5b34d6b0b5d5a7dc8a2b01666fe5c6"}
+{"answer": "<final_estimate>1300000000</final_estimate>", "prompt_hash": "fee67371ceae23eace588adf78e4a4cc768663f7456f3a404e7b1bd810f2e83a"}
+{"answer": "The text ends with **113302083** which is already in days (the calculation explicitly converts to days).\n\n<final_estimate>113302083</final_estimate>", "prompt_hash": "f913075a490f8c10c0e100997c7497658068521d6f3686291670e884e8af4999"}
+{"answer": "The text ends with a single-number estimate of **365,000,000** \u2014 this is already expressed in days (collective days of window-gazing).\n\n<final_estimate>365000000</final_estimate>", "prompt_hash": "f29a7cece04a9d8e1a5eb9da5cc6bb3cdb1943b039706228aa6fdb2a86f30ab7"}
+{"answer": "<final_estimate>253472222</final_estimate>", "prompt_hash": "fc53cd87922e98d69b338b5d704ded90a3b676b46d3c274aecf29afb9b15223f"}
+{"answer": "The text clearly states a final single-number estimate of **316,840,278** days (already expressed in days).\n\n<final_estimate>316840278</final_estimate>", "prompt_hash": "fdd1c8f4f9d236582f37fffb94958045cadafb0db509709d2ab625ef7a6180b5"}

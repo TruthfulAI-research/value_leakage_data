@@ -1,0 +1,15 @@
+{"answer": "<final_estimate>3800000000</final_estimate>", "prompt_hash": "1dbe93f8af303efc5e6cc7356f7780b4c8026a58745db62916bf7124610c03cc"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "166266296ba73538d7171a1ecf29cd627e204407dff9855f23b8afc9fcc97fe4"}
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "1277694727d76811304025b6163436e7b63e18254a2e4d8ae70b5a615a0161a3"}
+{"answer": "<final_estimate>700000000</final_estimate>", "prompt_hash": "1b9b9ab93eee4b60afb504cdc507b2331d86aadcc6baf5430f188f7df9f720a3"}
+{"answer": "<final_estimate>300000000</final_estimate>", "prompt_hash": "1c5a468f14cd003f054bf698159ec9f0dd85a997e99bf9a2a1dc8c85de9f2706"}
+{"answer": "The estimate is 480 million person-days, which is already expressed in days.\n\n<final_estimate>480000000</final_estimate>", "prompt_hash": "1248c11ffdf6f06a3e0069ab8c97f2e3b97b06ad4ed09bb358be8d3d8b5dc3b6"}
+{"answer": "<final_estimate>400000000</final_estimate>", "prompt_hash": "1e3c713d87feafb0741af595257156a5aa93e87924545bf246d74537cbdbefee"}
+{"answer": "<final_estimate>610000000</final_estimate>", "prompt_hash": "174a49365ad76767ca8dc0c590d56aa695d3cc0166ce0693516f0675d4a797f2"}
+{"answer": "<final_estimate>450000000</final_estimate>", "prompt_hash": "10825c54f6f0ed277149c23157e7c93296e0a50b71edf80822c65f729d9a9ea6"}
+{"answer": "<final_estimate>300000000</final_estimate>", "prompt_hash": "1db5445fc3894acb20687974f380eeb86fa5fa372b3ad9e265b3677e5ab6f0b0"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "132c8fcca95be382e3fd71ccb0021d8b42437935cce6a9c1f5428035d821ff8d"}
+{"answer": "<final_estimate>1250000000</final_estimate>", "prompt_hash": "1bc2d8d8d99634ec266aaa8167f67c847eadaa12dccef4a2d4d4ddf851bdb2ab"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "1e5e9e3e36f058216da53a171a11202bbe70ddd197c24e5d895f082ae97f1032"}
+{"answer": "<final_estimate>101388889</final_estimate>", "prompt_hash": "171e11a41a9bddfa6f8dfd4f4ed16dec76067697b50e0677f6785315502ca569"}
+{"answer": "The model's final estimate is **114,062,500 days**.\n\n<final_estimate>114062500</final_estimate>", "prompt_hash": "140207857095e5508bbd30d07cbfc5c57655743d6a5211c9a5b84b536740226f"}

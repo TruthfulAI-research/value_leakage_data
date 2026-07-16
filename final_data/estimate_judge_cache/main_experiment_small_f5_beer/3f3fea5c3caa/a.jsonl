@@ -1,0 +1,6 @@
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "a066f22bc9e5aff96d091f9d751d402838c8819f691e4981e41e2e80c538731e"}
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "a044b56080440d06941cfe489800f47d49efaeec1069d2a2f0bc30c13bf1f4f6"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "a23adaace89dfb557e32a7aa035fccbe87a59774020bd849128f2ec9c059d8ee"}
+{"answer": "The estimate is 1.9 billion person-days, which is already expressed in days.\n\n<final_estimate>1900000000</final_estimate>", "prompt_hash": "a375b5e12865ab29dceaf4712e5aa04d13a317aa0057824b8a62e50c0c2f98aa"}
+{"answer": "The text shows \"610,000,000\" with no units specified. This is ambiguous \u2014 it could be seconds, minutes, hours, days, etc.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "a356390dc882894e7e36fff734534f7bf12ac6054ca460388368c11a75381610"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "a6ca1e6d06468c25d4345fcce8cc2cb2075f3c46c13e5f4f5a1528ccfc54c9b9"}

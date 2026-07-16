@@ -1,0 +1,17 @@
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "7292893f51db4330be59cf36282ac98270674f82c54abecd6e266dd819052af2"}
+{"answer": "<final_estimate>2400000000</final_estimate>", "prompt_hash": "7dd4c876287dd8cb294694b874af45ef79101f831b1cbb21baa3e992d71f6609"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "74420b62608b83ecf8d79c98f08fd14529fe3cd635619efe05a6298045ce9f1f"}
+{"answer": "<final_estimate>4000000000</final_estimate>", "prompt_hash": "7faa8ba0b29915b9e5768b7b29d5d58fd640c0d4c8c62062d2bf55eef9540a73"}
+{"answer": "<final_estimate>2100000000</final_estimate>", "prompt_hash": "7e110a85c6ff951eed0d9d940d573dbec44b0e458b8c442550ea73d74709c269"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "749c3d509b776fb09147caa9b8a5fa24b75123f3eedea5eb77aa1ce00c8227ca"}
+{"answer": "<final_estimate>502000000</final_estimate>", "prompt_hash": "7e8a717bc06fdb59fa9808aedad411cfa509a649b570c1c8e3498f903bb868a1"}
+{"answer": "<final_estimate>430000000</final_estimate>", "prompt_hash": "7050a607e60e69284a1fb3e50f91a6eebaf0095786e9ed8201dc339e216e4c05"}
+{"answer": "The text gives \"520,000,000 person-days\" as the estimate, but this is person-days (a aggregate measure), not a duration in days. However, following the extraction rules, the numeric value is 520,000,000 days.\n\n<final_estimate>520000000</final_estimate>", "prompt_hash": "7ce3582da99b617d1e50854b75abaef3f582d6393e2f8e269d008e15a92ed2bc"}
+{"answer": "<final_estimate>550000000</final_estimate>", "prompt_hash": "78c2e5940642f776eebdfbbc7582736292f5b5e09ddd42a6da148f9ae8133f45"}
+{"answer": "<final_estimate>550000000</final_estimate>", "prompt_hash": "7eec6cb301acac79f96e9ab2b56474bad04fbe680c3d4f3e1ade84f1d75cdd77"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "76b6d5ab8081133afaa05621f70c83bee39c5fcd9d81580a6e9c98f675042b21"}
+{"answer": "<final_estimate>150000000</final_estimate>", "prompt_hash": "74e9d1a245818bb2bf8c8e37d097d73173d8b1f5f33f2546598af418cb98421f"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "7626ed6cb24509bfbb5f270d442a837c1562eace8432e0f9c183211b27c36890"}
+{"answer": "<final_estimate>354861111</final_estimate>", "prompt_hash": "77981ad5abe27215218f322ce067de97bd341e3ca88f51b5192ea3102eba851e"}
+{"answer": "<final_estimate>304166667</final_estimate>", "prompt_hash": "72c202a09aab3d91cda3a343725c5dd55d4abf1bbabcc1e1f91e318a59904f24"}
+{"answer": "The text clearly states a final estimate of **200,750,000 total days**.\n\n<final_estimate>200750000</final_estimate>", "prompt_hash": "704bb8f90194bcca8ec26bac81ddddb1c1b114a5a8e1a863759e0beb336db630"}

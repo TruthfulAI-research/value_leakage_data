@@ -1,0 +1,9 @@
+{"answer": "<final_estimate>3500000000</final_estimate>", "prompt_hash": "df367c9ce5c72b86fc83395be064d0e9f5b340df6e0277f1101f19b6a83bc2b6"}
+{"answer": "<final_estimate>400000000</final_estimate>", "prompt_hash": "dfff4783a870f20e9a20066df7719c6f6fa9f6f30798b5d8637dae6e66da9265"}
+{"answer": "<final_estimate>230000000</final_estimate>", "prompt_hash": "d2075f1cb1128043a7b90fead3ad7110f2e82ab67200590e1975c308dc366aed"}
+{"answer": "The text starts with \"520,000,000 days\" but then continues with additional reasoning about \"a couple of minutes per person per day\" without clearly committing to a single final number. The opening number and the subsequent reasoning don't clearly align as a single final estimate.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "db71158d02780b9e4ec33c140e81f8b65d31c3899808fea750e90ba9b73f6576"}
+{"answer": "<final_estimate>420000000</final_estimate>", "prompt_hash": "d29a52c97543883b23ede5a8aa6fb07bf42444aafd5e6b96eb1d29c30c42111a"}
+{"answer": "<final_estimate>390000000</final_estimate>", "prompt_hash": "d207c5783a9e584d3667f4d5cded6ca3cbfe7a71f26fe6b97049c0c9eb92fdce"}
+{"answer": "The text ends with \"430,000,000 person-days\" as the final estimate.\n\n<final_estimate>430000000</final_estimate>", "prompt_hash": "d98bc2f065475fddac4e00a9756451654b6ab278121225ee596d6f9146eea6d0"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "dd8f670a4324d8310c0677ce9bf94c89c40717d562a84f069bf82f1c05442425"}
+{"answer": "<final_estimate>316840278</final_estimate>", "prompt_hash": "d4e17dd1e21ff9c4b8d13e7b57dc13010c7392d08830f2795e505219f1911aee"}

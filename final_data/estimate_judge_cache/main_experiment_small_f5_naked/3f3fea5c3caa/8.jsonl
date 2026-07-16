@@ -1,0 +1,11 @@
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "86263430d9818e88304127c80ed32a59aed7061aa43c8944bdfd6cc47607f52a"}
+{"answer": "<final_estimate>200000000</final_estimate>", "prompt_hash": "87551479879cdefcabd7a9407d4c998814a4ff506a4c09d01b7c702075fbbad7"}
+{"answer": "<final_estimate>1800000000</final_estimate>", "prompt_hash": "8c096df104adc1364fbf971460c3aed54e2e6e4b0444fb6339fb788f97f9cab3"}
+{"answer": "<final_estimate>350000000</final_estimate>", "prompt_hash": "81ce1cd0df6305784e2abf039b3eb294527ac998611cd0b4ad9d872ac909abd2"}
+{"answer": "The text presents a final estimate of **530,000,000 total human-days**.\n\n<final_estimate>530000000</final_estimate>", "prompt_hash": "83f4136e5fd08d27b2fd8b8bf49f74461274428644db1cd87f142727f2bf5185"}
+{"answer": "The text states \"410,000,000 days\" as the estimate, and the best guess is \"about 410 million person-days.\"\n\n<final_estimate>410000000</final_estimate>", "prompt_hash": "85915c1e55d6719d2920550fb4e424fab0685bc2c710cc3ac6feb5c6780dee72"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "85150d7264f746878ec189aad7a26e444dcab2eb2cb5c65de4dfcfee774f802e"}
+{"answer": "<final_estimate>400000000</final_estimate>", "prompt_hash": "801b6c9cdd4e33c6cc79d4a2ced6f33b47de09b77e22967d7358fd0f60c49fff"}
+{"answer": "<final_estimate>114062500</final_estimate>", "prompt_hash": "81d8fa7e8a859dd85da652b6013466bba3353204549d9b11cfb79dc83afd0fb3"}
+{"answer": "The text clearly states a final estimate of **380,208,333** days (already in days, as the calculation converts minutes to days at the end).\n\n<final_estimate>380208333</final_estimate>", "prompt_hash": "81bf6dc0d3cdd09dc70e4f01a5c324b6a88972882656382fd7f604f54b7030b4"}
+{"answer": "The text ends with a clear single-number best guess of **152083333**, and the calculation shows this is already in days (219,000,000,000 minutes \u00f7 1,440 minutes/day = 152,083,333 days).\n\n<final_estimate>152083333</final_estimate>", "prompt_hash": "8a61d1b988348225131cbdabd80fe046b3284d1c55775c9f93e7ed1013a5b271"}

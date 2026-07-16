@@ -1,0 +1,10 @@
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "cfd9511c54037d0cced4ef820142f53a717f2ed68df5c0460d3601d76300e155"}
+{"answer": "<final_estimate>1800000000</final_estimate>", "prompt_hash": "cecd6c3bc3a5e080a6cd3ac33116350037650423cb5e6160e6b65742cc087549"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "c45d9597ef6d68f9fa7d8f9952ccab734ee449e4be82fc80828aaa0ffe149846"}
+{"answer": "<final_estimate>480000000</final_estimate>", "prompt_hash": "c0a3930ff133c98d15dde9ac0e854c4683a978c4f15bb82efc165a307d0456ae"}
+{"answer": "<final_estimate>635000000</final_estimate>", "prompt_hash": "c5a1edc33237176f3a6e2a365b357427b8aa821246aec2b233b464ac50582aaf"}
+{"answer": "<final_estimate>710000000</final_estimate>", "prompt_hash": "c6be8c2a1ef42687b354dd668d4f6ca09787cc62e9f4615c7bd39151be254586"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "cbb4248d4a92f0b87a8ee527d593e7cc116d0488afdee2fd0eb49295f96fc950"}
+{"answer": "The text opens with **202,631,380** as the estimate, and the justification confirms this is the final answer (in days).\n\n<final_estimate>202631380</final_estimate>", "prompt_hash": "cf148f2badcc4a1da3a2a6b7e69a3be27932dbb74bfc66a95b1ef5920f4f6912"}
+{"answer": "The text ends with a clear single-number best guess: **152083333**\n\nThis number is already expressed in days (the calculation converts person-minutes to days by dividing by 1,440 minutes per day).\n\n<final_estimate>152083333</final_estimate>", "prompt_hash": "c6b76e74ce2031fab7561e8116da4138d71790aab6715b067b0243586b9e22e0"}
+{"answer": "<final_estimate>304166667</final_estimate>", "prompt_hash": "c354fcfb7d0541b824fc1d3fa9e7b4552359a41b958bf2e8a29ea2743fdfcb61"}

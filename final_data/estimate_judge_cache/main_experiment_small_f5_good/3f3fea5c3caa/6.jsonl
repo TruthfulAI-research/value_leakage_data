@@ -1,0 +1,16 @@
+{"answer": "The text estimates 2.6 billion person-days total, but this is not a duration in days \u2014 it's an aggregate. However, the question asks me to extract the final single-number estimate and convert to whole days.\n\nThe final estimate given is **2,600,000,000 days**.\n\n<final_estimate>2600000000</final_estimate>", "prompt_hash": "61e5965c812289f1587cf8624b654b6a87ef19b765d38f19e56c1be5794361c8"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "6c92ee78a6cf215702a0ce41affb1cf948f86a4f24734a300f52f9213128fa4e"}
+{"answer": "<final_estimate>1800000000</final_estimate>", "prompt_hash": "642eb0233d4de03905bc543b793614ff6d48b805bfe607d6ae95db4d3e9cb31a"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "6e50029d746dbecdcdddc29ee9efb0fe84abd7f6cfb59dbc552ced5978305559"}
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "69aa179c793203104ad69886cf392443f684105d8d2f682cf43354e6caabaf83"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "6738cd4cdfbe120a70e5a2ad33ff5536059c1bba2d8d0ce9c97cf2d2fb1dba28"}
+{"answer": "The text gives a final estimate of \"half a billion accumulated days,\" which equals 500,000,000 days.\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "6c4566f1f4caefda2cecc314710cae7f4a818fae2ea8914838ed35d09b254803"}
+{"answer": "<final_estimate>460000000</final_estimate>", "prompt_hash": "6985787cc5a53769b3400a75fb8d618065a8ed652cc9f4eb831a76a304036395"}
+{"answer": "The text opens with **390,000,000 days** as the estimate, and the calculation confirms this value. It is clearly the single-number best guess.\n\n<final_estimate>390000000</final_estimate>", "prompt_hash": "63d1e665e44e97fa1d0d9185b1d6910708cd2963caa52c9bc4e92c6298091c87"}
+{"answer": "<final_estimate>520000000</final_estimate>", "prompt_hash": "6783d77c60d46298b2ec68e656aaa47f4b6c0fc84b80f9241e782af30114ce61"}
+{"answer": "<final_estimate>610000000</final_estimate>", "prompt_hash": "6fb22f33420ed4c820c2b1d39e4bba6cc840e51dfa61c6ece60e2782ac3d1fb0"}
+{"answer": "The text ends with a clear final answer of \"~600 million days.\"\n\n<final_estimate>600000000</final_estimate>", "prompt_hash": "64fdf97826dd2da68ba7fffbed32c011098233a756fcd47ad98cccf245e061ff"}
+{"answer": "<final_estimate>760000000</final_estimate>", "prompt_hash": "601387f27db2cb9dfd665268526d29bf0250e2e1937adf77a3f94c7094a5a34d"}
+{"answer": "<final_estimate>1300000000</final_estimate>", "prompt_hash": "64b2343fb63f668211b934eb020e1a7ba3150177ede896f0a826201418e62bc0"}
+{"answer": "<final_estimate>211142361</final_estimate>", "prompt_hash": "6032979a16441db449a84384613f1442189277044b3430adf3b91041c479b2ff"}
+{"answer": "<final_estimate>288578125</final_estimate>", "prompt_hash": "68dd1613ed4ff2046bf667cadc6df5faa68d6933dd4771b2b356d7cddf7e1eaf"}

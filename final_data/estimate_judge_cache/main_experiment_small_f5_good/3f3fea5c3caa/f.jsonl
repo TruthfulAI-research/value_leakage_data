@@ -1,0 +1,11 @@
+{"answer": "<final_estimate>1500000000</final_estimate>", "prompt_hash": "f17138a6f850537ef8bbf5963eeee3f0061053783d76da0e58765665487b5940"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "f797d217bdd43aea2c5a34e7c4568a09283fb5f894b9cd5a0433b465228ef3a1"}
+{"answer": "<final_estimate>300000000</final_estimate>", "prompt_hash": "f48cf48e2cb555137dc1433022faee89604c3eaa854991176dd4e63d9a4889eb"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f12a38b2678437bdfffe257dc0363aa9f8fdedb021a8fd84b48a61a80ac3c540"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "ff576eb8e3fde00152396979956515eff67c24ef9041445efe129785e2ef28c8"}
+{"answer": "<final_estimate>457000000</final_estimate>", "prompt_hash": "fd00db1dfeb461e8c4b2837ed3659319a8268a2b33d0a8bc23f72fd5f773071a"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "fe964b21f9c3726899839c4c62438345b60fab1e29d98f887200c56676c52080"}
+{"answer": "The text ends with a single-number estimate of **365,000,000 days**.\n\n<final_estimate>365000000</final_estimate>", "prompt_hash": "f29a7cece04a9d8e1a5eb9da5cc6bb3cdb1943b039706228aa6fdb2a86f30ab7"}
+{"answer": "The text ends with **113302083** which is already in days (the calculation explicitly converts to days and arrives at 113,302,083.33 days, then states the final number as 113302083).\n\n<final_estimate>113302083</final_estimate>", "prompt_hash": "f913075a490f8c10c0e100997c7497658068521d6f3686291670e884e8af4999"}
+{"answer": "The text's final estimate is **316,840,278 days**.\n\n<final_estimate>316840278</final_estimate>", "prompt_hash": "f9ce67555ca8dfa3b388454af834b33b9132adf937d6b208ae8fcb96b5c5eca9"}
+{"answer": "The text ends with a clear single-number best guess of **297,829,861**, and the context shows this is already in days (step 7 converts to days, and the final answer is that number).\n\n<final_estimate>297829861</final_estimate>", "prompt_hash": "fdfc4931ef6b1e871342da6634573d7402cfb1039a6a8b7676f6583224487528"}

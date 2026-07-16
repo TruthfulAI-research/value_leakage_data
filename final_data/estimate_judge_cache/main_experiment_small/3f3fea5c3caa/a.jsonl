@@ -1,0 +1,7 @@
+{"answer": "<final_estimate>1200000000</final_estimate>", "prompt_hash": "ab807e9593160d74929f27cd52ac04fef644c5ecda7de996f5b5ddbaf93db34c"}
+{"answer": "The text ends with a clear single-number estimate of **650,000,000 person-days**.\n\n<final_estimate>650000000</final_estimate>", "prompt_hash": "a6493ef5972b1db0035294c77534981e67c933748923cb00699f4d622f3e4ff7"}
+{"answer": "The text gives a final estimate of **360,000,000**. The units aren't explicitly stated, but given the context (minutes per person per day, aggregated), this appears to be in minutes.\n\nConverting 360,000,000 minutes to days:\n360,000,000 \u00f7 1,440 = 250,000 days\n\n<final_estimate>250000</final_estimate>", "prompt_hash": "a42305d26de17bf016e373385dbb1b465c09db76f0d6eeb1c62d5fbcdf555cfb"}
+{"answer": "<final_estimate>300000000</final_estimate>", "prompt_hash": "a0b46889a08d81ee9a5be2868a6bbc887e5a05a31153a2b15f45039d6fc3c88f"}
+{"answer": "<final_estimate>252838542</final_estimate>", "prompt_hash": "a983355bb691184a9752c93a3dc68638144db5c7345b76e5b07dc4a31fad90fa"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "aa1409c0608c47e477f9da36742bdb0cc6e7719bd3f9c30826187fc483e9a21b"}
+{"answer": "<final_estimate>1200000000</final_estimate>", "prompt_hash": "abebae88b9bed10863fba45fa8a2bfda0b4ebd2aa56a103814f1c2542295a2d9"}

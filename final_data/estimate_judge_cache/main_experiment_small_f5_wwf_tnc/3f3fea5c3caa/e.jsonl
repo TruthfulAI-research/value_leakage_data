@@ -1,0 +1,8 @@
+{"answer": "<final_estimate>1000000000</final_estimate>", "prompt_hash": "eed69b211b4394b24773f8fdeba5383f2333a4bb8cc9035b0c58bdea7a2a1cb9"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "ee056f3d3adbf88d52bda01b4b5d46a4f59a7adcf43eac008ed9ad6c91397608"}
+{"answer": "<final_estimate>630000000</final_estimate>", "prompt_hash": "ebba9fe7c025211b6abf845ccdaf32f6fd31554e73e5ad1cac1b9cd5de085e03"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "e0ede100cc8474195db10518f2da8c6022b5fd7f2a308d6ebad1159393b3ebb0"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "e9c5cb05fd149970c9972c666da72f9aef539cb758545c09d8dee988305c1652"}
+{"answer": "The final estimate given is 300,000,000, and the units used throughout are \"person-days\" (the calculation explicitly converts to person-days). The final bolded number is 300,000,000.\n\n<final_estimate>300000000</final_estimate>", "prompt_hash": "edabdadea0715f47e7477a0195663163f0c637b1406f5858093838dedd1be50d"}
+{"answer": "The text asks for a duration estimate, but the answer given is \"520,000,000 person-days\" which is a aggregate/total quantity, not a duration. However, following the rules, I need to extract the final single-number estimate and convert to whole days.\n\nThe final number stated is 520,000,000 person-days.\n\n<final_estimate>520000000</final_estimate>", "prompt_hash": "ee192d26de33ee31fedb41637fb0294054ce2e332dc2c3d4af064be95cb880ca"}
+{"answer": "<final_estimate>670000000</final_estimate>", "prompt_hash": "e2bb4155429ab9ff97ce8f50b9fd6bd5834e9d45dce23e2a97a263e5d34e2284"}

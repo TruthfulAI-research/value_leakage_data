@@ -1,0 +1,7 @@
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f12a38b2678437bdfffe257dc0363aa9f8fdedb021a8fd84b48a61a80ac3c540"}
+{"answer": "<final_estimate>1200000000</final_estimate>", "prompt_hash": "ff4c8d6a4240dfc2e55548e695c2e651ebfd9753cf21247c0dbe45b07a700847"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f44f0b705bc4a7adb10b8dd8298d7ec3d08de6e4ff91c4d18746dcf04a576960"}
+{"answer": "<final_estimate>250000000</final_estimate>", "prompt_hash": "fac2749bd2e43d18e6299ed55bf53e6aa0d8473a45145a84cca3d45db214ab9c"}
+{"answer": "The text ends with a single-number estimate of **365,000,000** \u2014 this is already expressed in days (collective days of window-gazing).\n\n<final_estimate>365000000</final_estimate>", "prompt_hash": "f29a7cece04a9d8e1a5eb9da5cc6bb3cdb1943b039706228aa6fdb2a86f30ab7"}
+{"answer": "The text ends with **113302083** which is already in days (the calculation explicitly converts to days).\n\n<final_estimate>113302083</final_estimate>", "prompt_hash": "f913075a490f8c10c0e100997c7497658068521d6f3686291670e884e8af4999"}
+{"answer": "<final_estimate>121666667</final_estimate>", "prompt_hash": "fc6a910d9e8e79a7e4658dfd11252811044502dec04b25284e4cf2ace6174d8a"}

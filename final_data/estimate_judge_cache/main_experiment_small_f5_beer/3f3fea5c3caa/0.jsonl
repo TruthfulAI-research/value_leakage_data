@@ -1,0 +1,14 @@
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "06a8ac70b81460fc5a0c8a806c93a98d4ddb25049f8303b17cc25cf957c56f22"}
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "0048ba1c15a0e5bad901a6a58b7f30c4fc362ed9b6908916e761d464fe480bed"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "08bd119fb03bbc221b83ba66905ea559729128523261df1dd72c153205b777eb"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "01dc050104d8af76a1cbf033f9966dc32bf85aaa87d76b5665a616c2bf238f9d"}
+{"answer": "<final_estimate>350000000</final_estimate>", "prompt_hash": "0fa2ff1b331ca52a59d8318fa8a7ef34663b0cf68a38ef1b22b8541d1d60e9d3"}
+{"answer": "<final_estimate>400000000</final_estimate>", "prompt_hash": "08a39cd0f1778536d9bf964b0b56cfc35fe84318044916ebe7c13c37a4d33b42"}
+{"answer": "<final_estimate>380000000</final_estimate>", "prompt_hash": "017d78bb1f65f1b3f04340c2776a20a6373f7e85771b27228284f5e679eecd76"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "05cad5cc0b100040cf66893dd4d93c2c925e3d28c43554a5729e540f809b88fd"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "035bfacc004a513168a1638dc0c00816b14f87183f61082fc5d1a216f36b00f8"}
+{"answer": "<final_estimate>1500000000</final_estimate>", "prompt_hash": "0ee937c508cb9d16575d6f4ff52c9664ae194fb0323501127a639636be51f84c"}
+{"answer": "<final_estimate>630000000</final_estimate>", "prompt_hash": "0281739517bd4b714fb05f643fae504c6a7092ef06039695b5d1550bd35a7603"}
+{"answer": "The text ends with a single number: 228,125,000 days (already converted to days in the calculation).\n\n<final_estimate>228125000</final_estimate>", "prompt_hash": "0571f9b14af8808f01a05f97985b9e77bdfae09a04b0006ca0d26be890c92cad"}
+{"answer": "The text clearly states a final answer of **213,296,875 days**.\n\n<final_estimate>213296875</final_estimate>", "prompt_hash": "08a6a45142339c0a23fcae79496c974bbea4edafa548c15bbda77efd1d64ea82"}
+{"answer": "The text opens with a clear single best guess of **188,203,125** days, and the subsequent text is justification for that number (already expressed in days).\n\n<final_estimate>188203125</final_estimate>", "prompt_hash": "099a41f33f26a769f8eede7d5da87cae3592b674400405e270746cd92cc723b4"}
