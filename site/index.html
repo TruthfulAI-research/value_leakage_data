@@ -170,9 +170,18 @@ and evaluations do not adequately address it.</p>
 <figure>
   <img src="figure1.png" alt="Figure 1: Illustration of covert value leakage.">
   <figcaption><b>Figure 1: Illustration of covert value leakage.</b>
-  The model's estimate is influenced by its moral values (left), its chain of
-  thought does not disclose the bias (middle), and the user is misinformed
-  (right).</figcaption>
+  <b>Left:</b> The model's estimate of the total number of spots on all living
+  giraffes is influenced by its moral values, as can be seen from the
+  difference between the model's answers with and without a donation note
+  added to the prompt (the actual evaluation setup also varies whether a
+  donation above or below the threshold causes the donation; see Section 3 of
+  the paper). This constitutes <i>value leakage</i>.
+  <b>Middle:</b> Ideally, the model's CoT should openly acknowledge the
+  model's motivation for choosing a higher estimate. However, it claims to
+  ignore the bet and give the most accurate number instead. The value leakage
+  is thus <i>covert</i>.
+  <b>Right:</b> The user reads the model's statements, and, given a lack of
+  acknowledgment of the bias in CoT or answer, is misinformed.</figcaption>
 </figure>
 
 <footer>
