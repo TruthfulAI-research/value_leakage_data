@@ -55,6 +55,29 @@ h1 {
   opacity: 0.85;
   margin-bottom: 30px;
 }
+.browse {
+  text-align: center;
+  margin: 0 0 16px;
+  padding: 22px 24px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.browse p {
+  margin: 0 0 14px;
+  font-size: 16.5px;
+}
+.browse-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #0b0d13;
+  font-size: 15.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.browse-btn:hover { filter: brightness(1.12); }
 .links {
   display: flex;
   justify-content: center;
@@ -131,8 +154,13 @@ Anna Sztyber-Betley<sup>1,2</sup> &nbsp; Owain Evans<sup>1</sup>
 <div class="note"><sup>*</sup>Equal contribution &nbsp;&nbsp;
 <sup>&dagger;</sup>Work done during Astra Fellowship at Constellation, Berkeley</div>
 
+<div class="browse">
+  <p>You can browse the model answers and chain-of-thought traces from our
+  project here:</p>
+  <a class="browse-btn" href="browser/">Open the rollout browser</a>
+</div>
+
 <div class="links">
-  <a href="browser/">Rollout browser</a>
   <a href="https://github.com/TruthfulAI-research/value_leakage">Code</a>
   <a href="https://github.com/TruthfulAI-research/value_leakage_data">Data</a>
 </div>
