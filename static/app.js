@@ -211,6 +211,7 @@ let INDEX = null;
 let BASES = {};       // base -> {base, variants: [{key, effort, display}]}
 let DATA = null;      // currently loaded (model variant, prompt_key) file
 let selectedIdx = null;
+let helpOpen = false; // "?" guide over the detail pane
 
 function fmtNum(n) {
   if (n === null || n === undefined) return "—";
@@ -581,6 +582,7 @@ function renderList() {
         card.append(pickBar(r.label_counts, 6));
       }
       card.addEventListener("click", () => {
+        helpOpen = false;
         selectedIdx = r._idx;
         renderList();
         renderDetail();
@@ -608,6 +610,8 @@ function onFilterChange() {
 
 function navigate(delta) {
   if (!DATA) return;
+  // Arrow navigation dismisses the "?" guide and goes back to the rollouts.
+  if (helpOpen) { helpOpen = false; renderDetail(); }
   const rows = filteredRows();
   if (!rows.length) return;
   const pos = rows.findIndex((r) => r._idx === selectedIdx);
@@ -727,17 +731,99 @@ function metaItems(r) {
   return items;
 }
 
+// The onboarding guide: shown in the empty detail pane before any rollout is
+// selected, and re-openable any time via the "?" header button. The chip
+// legend is built for the experiment currently selected in the dropdown.
+function guidePanel(withClose) {
+  const exp = currentExperiment();
+  const box = document.createElement("div");
+  box.className = "guide";
+
+  const head = document.createElement("div");
+  head.className = "guide-head";
+  const title = document.createElement("h2");
+  title.textContent = "How to use this browser";
+  head.append(title);
+  if (withClose) {
+    const close = document.createElement("button");
+    close.className = "guide-close";
+    close.textContent = "✕ close";
+    close.addEventListener("click", () => { helpOpen = false; renderDetail(); });
+    head.append(close);
+  }
+  box.append(head);
+
+  const p1 = document.createElement("p");
+  p1.innerHTML = "Each card on the left is <b>one rollout</b> — a single model " +
+    "response from the paper's experiments. Click a card (or press <b>→</b>) to " +
+    "read its full chain of thought and final answer, along with the exact " +
+    "prompt it was given.";
+  const p2 = document.createElement("p");
+  p2.innerHTML = "The dropdowns above pick the experiment, model and reasoning " +
+    "effort; the remaining dropdowns filter the cards. Where the covertness " +
+    "monitor ran, the detail view also shows its verdict, rationale and the " +
+    "judge prompt. Navigate with the <b>← / →</b> keys.";
+  box.append(p1, p2);
+
+  if (exp && (exp.covertness_categories || []).length) {
+    const lh = document.createElement("div");
+    lh.className = "guide-legend-title";
+    lh.textContent = `${COV_FIELD_LABEL[exp.id] || "CoT covertness"} chips on the cards ` +
+      `${COVERTNESS_JUDGE_NOTE[exp.id] || ""}`;
+    box.append(lh);
+    const covLabels = COVERTNESS_LABELS[exp.id] || {};
+    const paper = PAPER_LABELS[exp.id] || {};
+    const legend = document.createElement("div");
+    legend.className = "guide-legend";
+    for (const c of exp.covertness_categories) {
+      const row = document.createElement("div");
+      row.className = "guide-legend-row";
+      const chip = document.createElement("span");
+      chip.className = `cov-chip cov-${c}`;
+      chip.textContent = paper[c] ? `${paper[c]} (${c})` : c;
+      const desc = document.createElement("span");
+      desc.className = "guide-legend-desc";
+      desc.textContent = covLabels[c] || "";
+      row.append(chip, desc);
+      legend.append(row);
+    }
+    const rowNone = document.createElement("div");
+    rowNone.className = "guide-legend-row";
+    const chipNone = document.createElement("span");
+    chipNone.className = "cov-chip cov-none";
+    chipNone.textContent = "not measured";
+    const descNone = document.createElement("span");
+    descNone.className = "guide-legend-desc";
+    descNone.textContent = "the covertness monitor was not run on this rollout";
+    rowNone.append(chipNone, descNone);
+    legend.append(rowNone);
+    box.append(legend);
+  }
+
+  const note = document.createElement("p");
+  note.className = "guide-note";
+  const per = exp && exp.sample_per_cell
+    ? ` of up to ${exp.sample_per_cell} rollouts per model and condition` : "";
+  note.innerHTML = `The browser shows a fixed random sample${per}; the ` +
+    'complete raw caches are in the <a href="https://github.com/' +
+    'TruthfulAI-research/value_leakage_data">data repository</a>.';
+  box.append(note);
+  return box;
+}
+
 function renderDetail() {
   const d = els.detail;
+  if (helpOpen) {
+    d.replaceChildren(guidePanel(true));
+    d.scrollTop = 0;
+    return;
+  }
   if (!DATA || selectedIdx === null) {
     d.replaceChildren();
     // Keep the nav arrows visible before any selection: Next → (or the →
-    // key) picks the first rollout, so the placeholder hint is honest.
+    // key) picks the first rollout, so the guide's hint is honest.
     if (DATA) d.append(navRow());
-    const ph = document.createElement("div");
-    ph.className = "placeholder";
-    ph.textContent = "Select a rollout on the left (or press →) to inspect its chain-of-thought and answer.";
-    d.append(ph);
+    d.append(guidePanel(false));
     return;
   }
   const r = DATA.rows[selectedIdx];
@@ -929,6 +1015,12 @@ document.addEventListener("keydown", (e) => {
   if (tag === "select" || tag === "input" || tag === "textarea") return;
   if (e.key === "ArrowLeft") { e.preventDefault(); navigate(-1); }
   if (e.key === "ArrowRight") { e.preventDefault(); navigate(1); }
+  if (e.key === "Escape" && helpOpen) { helpOpen = false; renderDetail(); }
+});
+
+$("help-btn").addEventListener("click", () => {
+  helpOpen = !helpOpen;
+  renderDetail();
 });
 
 els.experiment.addEventListener("change", onExperimentChange);
