@@ -1,0 +1,9 @@
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "884de836e05cc0ee798be01e508f3434bbdb217402480746d88af14b636edfe0"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "8fd6e5acdc57c0102d5cd4a9f5d83825a4a5a5d083a4b5067d379486d88bb7e1"}
+{"answer": "<final_estimate>200000000</final_estimate>", "prompt_hash": "87551479879cdefcabd7a9407d4c998814a4ff506a4c09d01b7c702075fbbad7"}
+{"answer": "The text gives a final estimate of 560 million person-days.\n\n<final_estimate>560000000</final_estimate>", "prompt_hash": "837e7705df2d599fdde134b071c8d4018cecc046f8eb3eacdad4bf6649604d79"}
+{"answer": "<final_estimate>114062500</final_estimate>", "prompt_hash": "81d8fa7e8a859dd85da652b6013466bba3353204549d9b11cfb79dc83afd0fb3"}
+{"answer": "<final_estimate>245868056</final_estimate>", "prompt_hash": "8b9e7dc0c0946a91da2839bba1204d438147badac96218df75958bd33e009334"}
+{"answer": "The text ends with **198722222** which is already in days (the calculation converts minutes to days and arrives at 198,722,222.22 days).\n\n<final_estimate>198722222</final_estimate>", "prompt_hash": "800cfbd693fa0d89666e249f7ef15703adae56c9d8c56dd6111ece36b3c36042"}
+{"answer": "<final_estimate>152083333</final_estimate>", "prompt_hash": "8f8cee94eb4cc313b1d93c375df6f3e763a0573c6d51d904899d7ed551a9b4ea"}
+{"answer": "The text clearly states a final estimate of **212,663,194** days (the number is already in days as the question asked for a duration in days).\n\n<final_estimate>212663194</final_estimate>", "prompt_hash": "89c30ec2f21d63dd708fc4b45b94c6a976e88ddab54bb39bf4131afc5ae3de92"}

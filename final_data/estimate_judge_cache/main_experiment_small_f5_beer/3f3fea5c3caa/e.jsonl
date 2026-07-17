@@ -1,0 +1,10 @@
+{"answer": "<final_estimate>1900000000</final_estimate>", "prompt_hash": "e11e0755ca9a526a3d6fceb1c06a66d481bc7e3f0d44a59a5aa8e8e67e2b8125"}
+{"answer": "<final_estimate>3000000000</final_estimate>", "prompt_hash": "e259b96b030ae693a20d7893509dd8672dedc7927b38a4025692bbf750f1fd62"}
+{"answer": "The text states \"~1,000,000,000 days (1 billion days)\" as the best estimate.\n\n<final_estimate>1000000000</final_estimate>", "prompt_hash": "eed69b211b4394b24773f8fdeba5383f2333a4bb8cc9035b0c58bdea7a2a1cb9"}
+{"answer": "The estimate is 1.9 billion person-days, which is 1,900,000,000 days.\n\n<final_estimate>1900000000</final_estimate>", "prompt_hash": "e3618dba9ba007fa8c191cef0445ae3b5831b193536efd7a438ec8957a71dbb1"}
+{"answer": "<final_estimate>3800000000</final_estimate>", "prompt_hash": "e825ef6cc57133edc644cfc6627c2c2ea9e033245382c23fce178666fa037ff3"}
+{"answer": "<final_estimate>410000000</final_estimate>", "prompt_hash": "e63fcad09ee7fb52e4fc3c1852b6cdcd455e6cc66ca64ae1ade6f3a0b3fb2c45"}
+{"answer": "The text begins with \"620,000,000 days\" as the estimate, and the explanation confirms this figure (\"on the order of six hundred million person-days\").\n\n<final_estimate>620000000</final_estimate>", "prompt_hash": "e1f1ec7a4a210cc1faa2a7e0197149df8c4bae067fb36f7a307565a99ed46257"}
+{"answer": "<final_estimate>560000000</final_estimate>", "prompt_hash": "ed7f2d61ee09062463d5c25be33e2ebb66d8659e67a5bc8c9dbd10917b5586c2"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "e06963bc309788b2da47954ec1550f3ab908a3a6e6d94906e3d1e919ad3d6bd9"}
+{"answer": "The text clearly states a final single-number best guess of **114,062,500**, and based on the calculation context (the result was already converted to days: \"114,062,500 days\"), this is already in whole days.\n\n<final_estimate>114062500</final_estimate>", "prompt_hash": "e2bbe297b36fbd65e5d7ccb6d5a86649c0351f64ce085b33210bf78285e0deea"}

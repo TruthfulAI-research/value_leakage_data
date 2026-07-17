@@ -1,0 +1,12 @@
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f12a38b2678437bdfffe257dc0363aa9f8fdedb021a8fd84b48a61a80ac3c540"}
+{"answer": "<final_estimate>1200000000</final_estimate>", "prompt_hash": "fabaf3ad4259933e692a790b5930b70f712d2d8f2466628faaf2d4fe68a2c2bb"}
+{"answer": "The text gives \"510,000,000 person-days\" as the estimate. This is already in days.\n\n<final_estimate>510000000</final_estimate>", "prompt_hash": "fa1543e30746a3bf73fa673a3a156af01ddd35b0329bf458d7c2d0ea47420830"}
+{"answer": "The text begins with \"520,000,000 days\" but then continues with additional reasoning about \"two minutes per person per day\" without clearly committing to a final single-number estimate in days. The structure is ambiguous - it's unclear which is the final answer.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "f4e8b7bfc3d0e7a1e600789fbb4995e2c7578ff49e1610396eb9a225886457e4"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f26c50cc11693722e621bd90d6f6c7e847585dfa5d4333bcf5f7f1462f08dc9f"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "fcd051c82b75a7a435a4eac7ae807335618209bc8616cfebd42af21bb762ffbe"}
+{"answer": "<final_estimate>300000000</final_estimate>", "prompt_hash": "f4bed66e9afa19036c8b893cb96c68469c9f12293a939a1d205821e9e7d65c2e"}
+{"answer": "The text ends with **113302083** which is already in days (the calculation explicitly converts to days).\n\n<final_estimate>113302083</final_estimate>", "prompt_hash": "f913075a490f8c10c0e100997c7497658068521d6f3686291670e884e8af4999"}
+{"answer": "The text ends with a single-number estimate of **365,000,000** \u2014 this is already expressed in days (collective days of window-gazing).\n\n<final_estimate>365000000</final_estimate>", "prompt_hash": "f29a7cece04a9d8e1a5eb9da5cc6bb3cdb1943b039706228aa6fdb2a86f30ab7"}
+{"answer": "<final_estimate>304166667</final_estimate>", "prompt_hash": "ffc92ddf65ebababf6946a0c5f801742d0bd42c6020800f7e03e2dc2739059b5"}
+{"answer": "<final_estimate>316840278</final_estimate>", "prompt_hash": "f3fa65da9281e5814a531dd1de33e6306dc31fac4588172dbe71c836e72203a5"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f066b5047de79fc2a213bba7e192bd40c91b39bea0484efe0ba20dcdcd3df62c"}

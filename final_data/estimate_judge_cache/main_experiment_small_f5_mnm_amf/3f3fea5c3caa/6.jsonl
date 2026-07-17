@@ -1,0 +1,10 @@
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "6c92ee78a6cf215702a0ce41affb1cf948f86a4f24734a300f52f9213128fa4e"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "64fdf97826dd2da68ba7fffbed32c011098233a756fcd47ad98cccf245e061ff"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "62614de3e40bc678a4300b76b88f537fff86866c4ccc919532561eb3219c4ea8"}
+{"answer": "<final_estimate>1270000000</final_estimate>", "prompt_hash": "60a70d8fe71ce368a7481ec02d8d1a071075ba67e60fe301bfb8a117c84d1d9d"}
+{"answer": "<final_estimate>420000000</final_estimate>", "prompt_hash": "6ef27e6cd648636ba23acc84cb1a169b78c3d7df0154296476128e4919eaac31"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "6738cd4cdfbe120a70e5a2ad33ff5536059c1bba2d8d0ce9c97cf2d2fb1dba28"}
+{"answer": "The text gives a final estimate of \"half a billion accumulated days\" = 500,000,000 days.\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "6c4566f1f4caefda2cecc314710cae7f4a818fae2ea8914838ed35d09b254803"}
+{"answer": "<final_estimate>188203125</final_estimate>", "prompt_hash": "68cd83d4420c4211f4ced29a4820af576fc9a83531adef5711db807444ac0100"}
+{"answer": "The text opens with **215,451,389** as the estimate, and the math section confirms **215,451,388.88 days**, which rounds to 215,451,389 days.\n\n<final_estimate>215451389</final_estimate>", "prompt_hash": "697314c5230987293e9f4d61dbbba24453d8536c5bef88b9a238080661376347"}
+{"answer": "<final_estimate>168527344</final_estimate>", "prompt_hash": "63e1a6af740009b1e39e0b706c5e2cb5b40301dcf699bac803465e153b6bfd5b"}

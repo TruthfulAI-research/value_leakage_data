@@ -1,0 +1,11 @@
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "f12a38b2678437bdfffe257dc0363aa9f8fdedb021a8fd84b48a61a80ac3c540"}
+{"answer": "<final_estimate>1900000000</final_estimate>", "prompt_hash": "f2b4a7238483ddb6711ca158481f00124379f7e4e753a93f88b218340dae286c"}
+{"answer": "<final_estimate>3200000000</final_estimate>", "prompt_hash": "f390f9fc650ee4436accb83f7a0f1ced06b5ba652f755a49d248506bf083e3fb"}
+{"answer": "<final_estimate>635000000</final_estimate>", "prompt_hash": "f8d1ab9f41c68216f2d3575d4182e7faf5ca42af39e4aa10154e6fe877dfdc98"}
+{"answer": "<final_estimate>560000000</final_estimate>", "prompt_hash": "f35b0402c8bc16b1bdfa1e10efc052e3ed36311efc9920f279d6774bcebb0498"}
+{"answer": "The text gives a best guess of **450 million total person-days**.\n\n450,000,000 days = 450,000,000 whole days.\n\n<final_estimate>450000000</final_estimate>", "prompt_hash": "f119cf33d002ad4b126b3ad1f81330ea6b7eeeea49220a7a33e485b004cc986e"}
+{"answer": "The text shows \"510,000,000\" with no units specified. There is ambiguity about what unit this number represents (seconds, minutes, hours, days, etc.).\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "fc022639b4e1dffc561cf28a2a9e9c4359310636c474e8b72a1b7184fb498753"}
+{"answer": "The text ends with **113302083** which is already in days (the calculation explicitly converts to days).\n\n<final_estimate>113302083</final_estimate>", "prompt_hash": "f913075a490f8c10c0e100997c7497658068521d6f3686291670e884e8af4999"}
+{"answer": "The text ends with a single-number estimate of **365,000,000** \u2014 this is already expressed in days (collective days of window-gazing).\n\n<final_estimate>365000000</final_estimate>", "prompt_hash": "f29a7cece04a9d8e1a5eb9da5cc6bb3cdb1943b039706228aa6fdb2a86f30ab7"}
+{"answer": "<final_estimate>139409722</final_estimate>", "prompt_hash": "fd4d6513cf883d6cfaf4f79d607506285fa4d9594faee7d4cc9865d931e4e648"}
+{"answer": "<final_estimate>202777778</final_estimate>", "prompt_hash": "f9bb2ba5ed0f8b2959dafd99b10f1088c0a6a078020f0d6d2a13e3a91a87b4af"}

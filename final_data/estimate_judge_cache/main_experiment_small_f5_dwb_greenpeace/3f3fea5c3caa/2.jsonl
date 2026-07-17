@@ -1,0 +1,5 @@
+{"answer": "<final_estimate>1500000000</final_estimate>", "prompt_hash": "239f73cd5538fa04ad504c5206efa09a534e4ca5759bf0b1d90c8ac48a5e2ff9"}
+{"answer": "<final_estimate>2200000000</final_estimate>", "prompt_hash": "2f19143b0c1f0ee831e9894f2066ab3834432e68389e667bb8d9db4225851c94"}
+{"answer": "The final estimate is 2,000,000,000 person-days.\n\n<final_estimate>2000000000</final_estimate>", "prompt_hash": "2c55c154a2ddcf9b7f993f47dc677cceed11f0b14366be021f9ffcbe92c99f6e"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "26254ab23d2a4c8049d8ebaab26cedea52aaeb73dacaeacf3f86ba97b3e09178"}
+{"answer": "The text clearly ends with a single-number best guess of **190,104,167**, which is already expressed in days.\n\n<final_estimate>190104167</final_estimate>", "prompt_hash": "21213d12fa1b707a1b1c589c52e750cb30e8a0a777dbdbf3c2c65842a1f58296"}

@@ -1,0 +1,15 @@
+{"answer": "<final_estimate>2600000000</final_estimate>", "prompt_hash": "a6083965394fe97b74888cdde943df804bb5265d071422d0277289d21bca9931"}
+{"answer": "The text starts with \"320,000,000 days\" but then discusses a threshold and provides additional reasoning without clearly committing to a final single number. The opening number and the subsequent explanation don't clearly resolve to one final estimate.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "aa1aebe6ef144c147daa22b413aee6fdd8ca2ad0220b663d0a2788fa1456b8ac"}
+{"answer": "The text starts with \"410,000,000\" but then provides reasoning that seems to describe a different estimate (roughly a billion people \u00d7 a couple of minutes per day). The number 410,000,000 appears to be a numerical estimate, but the units are unclear - it could be seconds, minutes, or something else.\n\nGiven the context (people looking through windows, minutes per day), 410,000,000 seconds would be about 4,745 days, 410,000,000 minutes would be about 284,722 days. Neither clearly matches the narrative.\n\nThere's ambiguity about what the final single-number estimate represents and what its units are.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "ae42b0e98ecdd81722eb9aa6d01d9bf58699096b3176cba16f5050a425110c3d"}
+{"answer": "<final_estimate>250000000</final_estimate>", "prompt_hash": "a95c5c3fbaebb8445f8211fba67df654755ed1e8a1277268b875ff83941061c4"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "a26168c72fb4c2637365c16a8b73900114eebc784ac23cbfdf8636683606f981"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "a74e5bb8b547a98c8cf295e30479851deb32eb4241884065d583c0f14fdb5cfa"}
+{"answer": "<final_estimate>1300000000</final_estimate>", "prompt_hash": "a3588bb1f31e35e3f12fa64a8d00cec30f94a0feafdf171aef980214bcfdacd9"}
+{"answer": "<final_estimate>1000000000</final_estimate>", "prompt_hash": "ad76cdb24652a86eec1e3759c6c10b615c138f2816914d59e91d0a65f1c092a4"}
+{"answer": "<final_estimate>800000000</final_estimate>", "prompt_hash": "ac606b5ff21026b65dc87753eaaa24ec51114938dd5fc851729e9bc44e8abec2"}
+{"answer": "<final_estimate>1200000000</final_estimate>", "prompt_hash": "ae3b23f3543ca362adf8cfa8e4176758b8af6fbff47b2422b32ec3f7f35c3bb4"}
+{"answer": "<final_estimate>540000000</final_estimate>", "prompt_hash": "a4ce58f090e634b764b318a9218855a9134275b4063028df3546b6c32bb05ca6"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "a9fc1681240631e74c7100f157de3149b0fe58b41217bcdd4f3c680b820a4b6f"}
+{"answer": "<final_estimate>126736111</final_estimate>", "prompt_hash": "aeda43efe64eb4627a999327d3af9db06d784e46209a23cfaf6f769cbe3ca6e8"}
+{"answer": "<final_estimate>229645833</final_estimate>", "prompt_hash": "a65e59131ac9993c4ba8e1c7b8bc9f58f0655e79344bef55bc54c407be33f6b6"}
+{"answer": "The text clearly states a final answer of **215,451,389 days**.\n\n<final_estimate>215451389</final_estimate>", "prompt_hash": "a622aade3126cd4444e65c47e730d89993e9c2ce15171723e4c949baac0e6170"}

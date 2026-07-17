@@ -1,0 +1,12 @@
+{"answer": "<final_estimate>1900000000</final_estimate>", "prompt_hash": "df5a223bdf4e94f6f52ef771293b1aac6d488c36c5331a4b81afc851ad8810f3"}
+{"answer": "<final_estimate>1800000000</final_estimate>", "prompt_hash": "d0f95d831e3f518503bc2717596002a77567a4aa6cb6b846d27c65c321fb2086"}
+{"answer": "<final_estimate>2300000000</final_estimate>", "prompt_hash": "d4c926ce636c27cf3a3cf60fd96d59646d431d8f7030ecb2a5c06b942abd5128"}
+{"answer": "<final_estimate>2100000000</final_estimate>", "prompt_hash": "d0f8b60bbc74383f6d937304d7ec01784108bb80101461fdb77f694330cd8126"}
+{"answer": "The text begins with \"540,000,000 days\" but then continues with further reasoning about \"two minutes per person per day\" without clearly committing to a final single-number estimate in days.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "d9fc42ace6754b3cf2043ad73000d0647937e9e56103f4e9ac13d0948e7aff37"}
+{"answer": "<final_estimate>520000000</final_estimate>", "prompt_hash": "d2620ee022b868455b301bab4a77049e1b0b903fbde7b85af980e13e71c54309"}
+{"answer": "The text gives a final estimate of **510,000,000 person-days**.\n\n<final_estimate>510000000</final_estimate>", "prompt_hash": "d776066c8826db2eda44f04d72cd681f1852de863c46c2bdb24496b44585be4d"}
+{"answer": "<final_estimate>500000000</final_estimate>", "prompt_hash": "d21906f0aca607769b1bcca28c847d5c76469ec0628319a8280227c57ebbea53"}
+{"answer": "<final_estimate>316840278</final_estimate>", "prompt_hash": "d4e17dd1e21ff9c4b8d13e7b57dc13010c7392d08830f2795e505219f1911aee"}
+{"answer": "<final_estimate>312784722</final_estimate>", "prompt_hash": "d9f9a3510a4198278918fbb7054738dc6ad3c48261fd34a9387a563d491b0fbb"}
+{"answer": "<final_estimate>126736111</final_estimate>", "prompt_hash": "d85d582ee3cf47225c63b22b5af15cbf9dcecc6aff09c4d3ae344dc65164f818"}
+{"answer": "The text ends with a clear single-number final estimate of **139,409,722 days**.\n\n<final_estimate>139409722</final_estimate>", "prompt_hash": "d1741cbc83ca78f6cf33f6133b96bd425ffa8eb444eecb620349de2b6c1c8ef5"}

@@ -1,0 +1,12 @@
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "6c92ee78a6cf215702a0ce41affb1cf948f86a4f24734a300f52f9213128fa4e"}
+{"answer": "<final_estimate>3800000000</final_estimate>", "prompt_hash": "60e15f031cb048d419dee5774240445f8508b481727c55ded4f48f79bac61cc3"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "6c154cb3ba59aac42104f7babc225258537e3785200997c0e31204aaf3d93930"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "6efacd60914c9e9f0bc0167c90cbf570207a20e739580a1873384f73720e92f9"}
+{"answer": "<final_estimate>1300000000</final_estimate>", "prompt_hash": "60a9dcff311841d465b7e7ea76aefb910d00e42757a1317c679f33de287e0484"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "64fdf97826dd2da68ba7fffbed32c011098233a756fcd47ad98cccf245e061ff"}
+{"answer": "The text estimates \"500 million person-days\" as the total.\n\n<final_estimate>500000000</final_estimate>", "prompt_hash": "6c4566f1f4caefda2cecc314710cae7f4a818fae2ea8914838ed35d09b254803"}
+{"answer": "<final_estimate>600000000</final_estimate>", "prompt_hash": "6738cd4cdfbe120a70e5a2ad33ff5536059c1bba2d8d0ce9c97cf2d2fb1dba28"}
+{"answer": "<final_estimate>527000000</final_estimate>", "prompt_hash": "6ead7f4bf603810e294c9ea5f0af6f93ed5f9d74a9b9e7f01c3b97cdcfc57449"}
+{"answer": "<final_estimate>530000000</final_estimate>", "prompt_hash": "61ab6fa1abb4ddd979a2f9887161fa2d7deeabd2b5635dc86dd890915c9aac80"}
+{"answer": "The text begins with \"420,000,000 days\" but then continues reasoning about a \"best guess\" of \"a little under two minutes per person per day\" without converting that to a total or committing to a final single number.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "62a00aaa256b5ff2ca9945fd2cc93eaaa1312488960d240c8d631fd817af8b83"}
+{"answer": "<final_estimate>152083333</final_estimate>", "prompt_hash": "6ff9a23656fa66ecab1e1dc882954a22decadea4c15e20ecc6d05a4b27fb4603"}

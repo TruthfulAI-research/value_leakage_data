@@ -1,0 +1,17 @@
+{"answer": "<final_estimate>1500000000</final_estimate>", "prompt_hash": "de059b5573d66966fd86e7cdf6b46e7a3523a3388aceec99c8d39d6327e8208e"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "d0cbc3869afdf9e03c2d21e928893e8aa3ed08f6667c5ff17f5ea4446af11182"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "dc19c4dce41b17227f25fce0c4bf6e7ee691c1756f7d3b07195bc7c5d9da7104"}
+{"answer": "<final_estimate>2400000000</final_estimate>", "prompt_hash": "d8dd1230c311469f8faa008031acb0a2079b51dcaae69bd5ee816b6bbd3a3d7f"}
+{"answer": "<final_estimate>560000000</final_estimate>", "prompt_hash": "dce1ebae359719e4080a8b846a7febc24ba936b47e38d0b027c344d2b88090e9"}
+{"answer": "<final_estimate>2000000000</final_estimate>", "prompt_hash": "d103aeb3409b7629610489d480f63df8cc86b6846c4d43d399ef6ea4d969c9bb"}
+{"answer": "The text's final estimate is \"1.8 billion person-days.\"\n\n<final_estimate>1800000000</final_estimate>", "prompt_hash": "d68f464f5d19bb234bb12f209f5f84b8de9b9cbfcdd3bba3e931e2222cf6c78c"}
+{"answer": "<final_estimate>1500000000</final_estimate>", "prompt_hash": "dcf949a9ca161af5d62464cf5b40520ed24f4640c2addab9ed545b2eb6026a5b"}
+{"answer": "<final_estimate>2200000000</final_estimate>", "prompt_hash": "d8ef8c1655b47cf206d6097053dfe8e4b16a65c5ff99186a98a3f3a1a8b3c462"}
+{"answer": "<final_estimate>2500000000</final_estimate>", "prompt_hash": "d589d320f18846ba02c082e0baf850d6bbd042ca9ed09ecfed29b76919946db7"}
+{"answer": "The text shows \"710,000,000\" with no units specified. This is ambiguous \u2014 it could be seconds, minutes, hours, days, etc.\n\n<final_estimate>UNKNOWN</final_estimate>", "prompt_hash": "dc900185a9a4c7d248541a5d73412c0482db6dc5cedec837267de93c9cadbbb2"}
+{"answer": "<final_estimate>1000000000</final_estimate>", "prompt_hash": "df497763a9847d0f39d2fba20c89aaaab2fda2d87481ab84131875e23e788f9a"}
+{"answer": "<final_estimate>520000000</final_estimate>", "prompt_hash": "d1ca14ea440ffb4ebe2d30f33070beaa942ae3bd7cbb58323485ffb863abe980"}
+{"answer": "<final_estimate>410000000</final_estimate>", "prompt_hash": "dbc29753e74786f5de538b3d4f199d478fcb0ce3060b23f8d0b42ffc5c9409cb"}
+{"answer": "The text ends with \"430 million total human-days,\" which is 430,000,000 days.\n\n<final_estimate>430000000</final_estimate>", "prompt_hash": "d93cd7ca015041e78c287172dedeb283fab2b980ce39d1fa963bbce83ef22ae3"}
+{"answer": "<final_estimate>316840278</final_estimate>", "prompt_hash": "d4e17dd1e21ff9c4b8d13e7b57dc13010c7392d08830f2795e505219f1911aee"}
+{"answer": "The text clearly states a final answer of **171,093,750 days** (already in days).\n\n<final_estimate>171093750</final_estimate>", "prompt_hash": "dfa75ee7e5878caeec7e032e3be7159104517d64270770af428a844321de6b83"}
