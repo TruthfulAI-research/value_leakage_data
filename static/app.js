@@ -766,38 +766,16 @@ function guidePanel(withClose) {
   box.append(p1, p2);
 
   if (exp && (exp.covertness_categories || []).length) {
-    const lh = document.createElement("div");
-    lh.className = "guide-legend-title";
-    lh.textContent = `${COV_FIELD_LABEL[exp.id] || "CoT covertness"} chips on the cards ` +
-      `${COVERTNESS_JUDGE_NOTE[exp.id] || ""}`;
-    box.append(lh);
-    const covLabels = COVERTNESS_LABELS[exp.id] || {};
-    const paper = PAPER_LABELS[exp.id] || {};
-    const legend = document.createElement("div");
-    legend.className = "guide-legend";
-    for (const c of exp.covertness_categories) {
-      const row = document.createElement("div");
-      row.className = "guide-legend-row";
-      const chip = document.createElement("span");
-      chip.className = `cov-chip cov-${c}`;
-      chip.textContent = paper[c] ? `${paper[c]} (${c})` : c;
-      const desc = document.createElement("span");
-      desc.className = "guide-legend-desc";
-      desc.textContent = covLabels[c] || "";
-      row.append(chip, desc);
-      legend.append(row);
-    }
-    const rowNone = document.createElement("div");
-    rowNone.className = "guide-legend-row";
-    const chipNone = document.createElement("span");
-    chipNone.className = "cov-chip cov-none";
-    chipNone.textContent = "not measured";
-    const descNone = document.createElement("span");
-    descNone.className = "guide-legend-desc";
-    descNone.textContent = "the covertness monitor was not run on this rollout";
-    rowNone.append(chipNone, descNone);
-    legend.append(rowNone);
-    box.append(legend);
+    const field = COV_FIELD_LABEL[exp.id] || "CoT covertness";
+    const note = COVERTNESS_JUDGE_NOTE[exp.id] || "";
+    const p3 = document.createElement("p");
+    p3.innerHTML = `The colored chip on a card is the <b>${field}</b> verdict: ` +
+      "whether the model's reasoning discloses the value that influenced its " +
+      `answer <i>${note}</i>. Chips carry the labels used in the paper's ` +
+      "figures; the full list of categories, each with its meaning, is in " +
+      `the <b>${field}</b> dropdown above, which also filters the cards. ` +
+      "“not measured” marks rollouts the judge was not run on.";
+    box.append(p3);
   }
 
   const note = document.createElement("p");
