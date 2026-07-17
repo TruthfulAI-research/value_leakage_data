@@ -37,3 +37,17 @@ To preview changes locally:
 (cd static && python3 -m http.server 8000)   # browser at http://localhost:8000
 (cd site && python3 -m http.server 8001)     # landing page; its /browser link only works once deployed
 ```
+
+## Citation
+
+```bibtex
+@misc{betley2026valueleakagellmsanswers,
+      title={Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values},
+      author={Jan Betley and Johannes Treutlein and Jan Dubiński and Harry Mayne and Karol Gałązka and Niels Warncke and Anna Sztyber-Betley and Owain Evans},
+      year={2026},
+      eprint={2607.14345},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2607.14345},
+}
+```
