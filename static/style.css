@@ -282,7 +282,6 @@ main {
 }
 .guide-close:hover { border-color: var(--accent); color: var(--accent); }
 .guide p { margin: 0 0 12px; color: var(--text); }
-.guide p b { color: var(--accent); }
 .guide p i { color: var(--muted); }
 .guide-note {
   color: var(--muted);

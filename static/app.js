@@ -732,8 +732,8 @@ function metaItems(r) {
 }
 
 // The onboarding guide: shown in the empty detail pane before any rollout is
-// selected, and re-openable any time via the "?" header button. The chip
-// legend is built for the experiment currently selected in the dropdown.
+// selected, and re-openable any time via the "?" header button. The
+// covertness paragraph adapts to the experiment currently selected.
 function guidePanel(withClose) {
   const exp = currentExperiment();
   const box = document.createElement("div");
@@ -754,27 +754,26 @@ function guidePanel(withClose) {
   box.append(head);
 
   const p1 = document.createElement("p");
-  p1.innerHTML = "Each card on the left is <b>one rollout</b> — a single model " +
-    "response from the paper's experiments. Click a card (or press <b>→</b>) to " +
-    "read its full chain of thought and final answer, along with the exact " +
-    "prompt it was given.";
+  p1.innerHTML = "Each card on the left is one rollout: the model's answer " +
+    "to a single prompt, with its full chain of thought. Click a card or " +
+    "press <b>→</b> to read it, together with the exact prompt the model saw.";
   const p2 = document.createElement("p");
-  p2.innerHTML = "The dropdowns above pick the experiment, model and reasoning " +
-    "effort; the remaining dropdowns filter the cards. Where the covertness " +
-    "monitor ran, the detail view also shows its verdict, rationale and the " +
-    "judge prompt. Navigate with the <b>← / →</b> keys.";
+  p2.innerHTML = "The first three dropdowns at the top choose the experiment, " +
+    "model and reasoning level; the rest filter the list. The <b>←</b> and " +
+    "<b>→</b> keys move between rollouts.";
   box.append(p1, p2);
 
   if (exp && (exp.covertness_categories || []).length) {
     const field = COV_FIELD_LABEL[exp.id] || "CoT covertness";
     const note = COVERTNESS_JUDGE_NOTE[exp.id] || "";
     const p3 = document.createElement("p");
-    p3.innerHTML = `The colored chip on a card is the <b>${field}</b> verdict: ` +
-      "whether the model's reasoning discloses the value that influenced its " +
-      `answer <i>${note}</i>. Chips carry the labels used in the paper's ` +
-      "figures; the full list of categories, each with its meaning, is in " +
-      `the <b>${field}</b> dropdown above, which also filters the cards. ` +
-      "“not measured” marks rollouts the judge was not run on.";
+    p3.innerHTML = `<b>${field}</b>, the last dropdown, says whether the ` +
+      "model's reasoning discloses that its own values influenced the " +
+      `answer. An LLM judge <i>${note}</i> put each rollout into one of the ` +
+      "categories listed in that dropdown; the names are the ones used in " +
+      "the paper's figures, and “not measured” means the judge was not run " +
+      "on that rollout. For judged rollouts the detail view also shows the " +
+      "judge's rationale and prompt.";
     box.append(p3);
   }
 
