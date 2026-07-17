@@ -70,7 +70,7 @@ const COVERTNESS_LABELS = {
   },
 };
 const COVERTNESS_JUDGE_NOTE = {
-  giraffes: "(Sonnet judge, CoT with numbers blurred)",
+  giraffes: "(Sonnet 4.6 judge)",
   ai_bubble: "(Sonnet monitor, own-company rollouts only)",
   agi_tweet: "(Sonnet monitor, own-company rollouts only)",
   job_offer: "(Sonnet monitor, own-company-in-scenario rollouts only)",
