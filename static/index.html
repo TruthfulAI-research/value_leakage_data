@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>Rollout Browser</title>
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 <header>
@@ -45,12 +45,18 @@
 </header>
 
 <main>
-  <section id="list" class="list"></section>
+  <div class="list-pane">
+    <div class="search-bar">
+      <input id="search" type="search" placeholder="Search CoT and answers…  (/)"
+             autocomplete="off" spellcheck="false">
+    </div>
+    <section id="list" class="list"></section>
+  </div>
   <section id="detail" class="detail">
     <div class="placeholder">Select a rollout on the left to inspect its chain-of-thought and answer.</div>
   </section>
 </main>
 
-<script src="app.js?v=17"></script>
+<script src="app.js?v=18"></script>
 </body>
 </html>

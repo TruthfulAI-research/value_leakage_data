@@ -105,9 +105,32 @@ main {
   min-height: 0;
 }
 
-.list {
-  overflow-y: auto;
+.list-pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
   border-right: 1px solid var(--border);
+}
+
+.search-bar {
+  flex: 0 0 auto;
+  padding: 10px 10px 0;
+}
+.search-bar input {
+  width: 100%;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+}
+.search-bar input:focus { outline: 1px solid var(--accent); }
+.search-bar input::placeholder { color: var(--muted); }
+
+.list {
+  flex: 1 1 auto;
+  overflow-y: auto;
   padding: 10px;
 }
 
@@ -283,6 +306,13 @@ main {
 .guide-close:hover { border-color: var(--accent); color: var(--accent); }
 .guide p { margin: 0 0 12px; color: var(--text); }
 .guide p i { color: var(--muted); }
+.guide-cats {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: var(--text);
+}
+.guide-cats li { margin: 0 0 4px; }
+.guide-cats b { font-weight: 600; }
 .guide-note {
   color: var(--muted);
   font-size: 12.5px;

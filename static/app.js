@@ -18,6 +18,7 @@ const els = {
   summary: $("summary"),
   list: $("list"),
   detail: $("detail"),
+  search: $("search"),
 };
 
 // Per-experiment covertness category descriptions (dropdown + detail note).
@@ -212,6 +213,8 @@ let BASES = {};       // base -> {base, variants: [{key, effort, display}]}
 let DATA = null;      // currently loaded (model variant, prompt_key) file
 let selectedIdx = null;
 let helpOpen = false; // "?" guide over the detail pane
+let searchQuery = ""; // lowercase substring filter over CoT + answer
+let searchTimer = null;
 
 function fmtNum(n) {
   if (n === null || n === undefined) return "—";
@@ -271,7 +274,7 @@ function onExperimentChange() {
   const exp = currentExperiment();
 
   BASES = {};
-  els.model.replaceChildren();
+  els.model.replaceChildren(option("__all__", "ALL"));
   for (const group of exp.model_groups) {
     const og = document.createElement("optgroup");
     og.label = group.family;
@@ -335,6 +338,16 @@ function onExperimentChange() {
 }
 
 function onModelChange() {
+  // Model=ALL always loads every reasoning level of every model; the
+  // effort dropdown is locked to ALL so the selection can't drift.
+  if (els.model.value === "__all__") {
+    els.effort.replaceChildren(option("__all__", "ALL"));
+    els.effort.value = "__all__";
+    els.effort.disabled = true;
+    els.effort.dataset.effort = "all";
+    onEffortChange();
+    return;
+  }
   const base = BASES[els.model.value];
   const prevEffort = els.effort.dataset.effort;
   els.effort.replaceChildren(
@@ -349,11 +362,23 @@ function onModelChange() {
 }
 
 function onEffortChange() {
-  const base = BASES[els.model.value];
-  const v = base.variants.find((x) => x.key === els.effort.value);
-  els.effort.dataset.effort = v ? v.effort
-    : (els.effort.value === "__all__" ? "all" : "");
+  if (els.model.value === "__all__" || els.effort.value === "__all__") {
+    els.effort.dataset.effort = "all";
+  } else {
+    const base = BASES[els.model.value];
+    const v = base.variants.find((x) => x.key === els.effort.value);
+    els.effort.dataset.effort = v ? v.effort : "";
+  }
   loadData();
+}
+
+// Every (base, variant) the current experiment exposes — used by Model=ALL.
+function allVariantJobs() {
+  const jobs = [];
+  for (const b of Object.values(BASES)) {
+    for (const vt of b.variants) jobs.push({ base: b.base, vt });
+  }
+  return jobs;
 }
 
 // Tag the loaded model's own company in the scenario dropdown.
@@ -380,42 +405,66 @@ async function fetchPayload(expId, variantKey, pk) {
   return res.json();
 }
 
+function mergePayloads(loaded, displayName) {
+  // Round-robin interleave so no single model/effort dominates the top of
+  // the list. Per-row tags keep threshold / prompts / effort / model when
+  // those differ across the merged files.
+  const lists = loaded.map(([meta, p]) => p.rows.map((r) => ({
+    ...r,
+    _model: meta.base,
+    _effort: meta.vt.effort,
+    _thr: p.threshold ?? null,
+    _prompts: p.prompts || null,
+    _origin: p.origin ?? null,
+    _display: p.display_name || meta.base,
+  })));
+  const rows = [];
+  const longest = Math.max(...lists.map((l) => l.length));
+  for (let i = 0; i < longest; i++) {
+    for (const l of lists) if (i < l.length) rows.push(l[i]);
+  }
+  return {
+    ...loaded[0][1],
+    rows,
+    threshold: null,
+    origin: null, // mixed; own-company annotation is per-row when needed
+    display_name: displayName,
+  };
+}
+
 async function loadData() {
   const exp = currentExperiment();
+  const modelVal = els.model.value;
   const variant = currentVariantKey();
   const pk = els.promptKey.value;
-  if (!variant || !pk) return;
+  if (!pk) return;
+  if (modelVal !== "__all__" && !variant) return;
   DATA = null;
   selectedIdx = null;
   els.list.innerHTML = '<div class="loading">Loading…</div>';
   renderDetail();
   try {
-    if (variant === "__all__") {
-      // "All" reasoning levels: fetch every variant of the base model and
-      // interleave their (pre-shuffled) rows round-robin. Each row is tagged
-      // with its effort and its own file's threshold — giraffes thresholds
-      // (and prompts embedding them) are per variant, so those stay per-row.
-      const variants = BASES[els.model.value].variants;
+    if (modelVal === "__all__") {
+      const jobs = allVariantJobs();
+      els.list.innerHTML =
+        `<div class="loading">Loading ${jobs.length} model / reasoning files…</div>`;
       const settled = await Promise.allSettled(
-        variants.map((vt) => fetchPayload(exp.id, vt.key, pk)));
-      const loaded = [];
-      settled.forEach((res, i) => {
-        if (res.status === "fulfilled") loaded.push([variants[i], res.value]);
-      });
+        jobs.map((j) => fetchPayload(exp.id, j.vt.key, pk).then((p) => [j, p])));
+      const loaded = settled
+        .filter((r) => r.status === "fulfilled")
+        .map((r) => r.value);
       if (!loaded.length) throw new Error("HTTP 404");
-      const lists = loaded.map(([vt, p]) => p.rows.map((r) => ({
-        ...r,
-        _effort: vt.effort,
-        _thr: p.threshold ?? null,
-        _prompts: p.prompts || null,
-      })));
-      const rows = [];
-      const longest = Math.max(...lists.map((l) => l.length));
-      for (let i = 0; i < longest; i++) {
-        for (const l of lists) if (i < l.length) rows.push(l[i]);
-      }
-      DATA = { ...loaded[0][1], rows, threshold: null,
-               display_name: `${els.model.value} (all reasoning levels)` };
+      DATA = mergePayloads(loaded, "all models");
+    } else if (variant === "__all__") {
+      const variants = BASES[modelVal].variants;
+      const settled = await Promise.allSettled(
+        variants.map((vt) =>
+          fetchPayload(exp.id, vt.key, pk).then((p) => [{ base: modelVal, vt }, p])));
+      const loaded = settled
+        .filter((r) => r.status === "fulfilled")
+        .map((r) => r.value);
+      if (!loaded.length) throw new Error("HTTP 404");
+      DATA = mergePayloads(loaded, `${modelVal} (all reasoning levels)`);
     } else {
       DATA = await fetchPayload(exp.id, variant, pk);
     }
@@ -436,17 +485,25 @@ async function loadData() {
   renderDetail(); // re-render the placeholder with the nav arrows live
 }
 
+function rowMatchesSearch(r, q) {
+  if (!q) return true;
+  const cot = (r.reasoning || "").toLowerCase();
+  const ans = (r.answer || "").toLowerCase();
+  return cot.includes(q) || ans.includes(q);
+}
+
 function filteredRows() {
   if (!DATA) return [];
   const dir = els.direction.value;
   const side = els.answerSide.value;
   const cov = els.covertness.value;
   const thr = DATA.threshold;
+  const q = searchQuery;
   return DATA.rows
     .map((r, i) => ({ ...r, _idx: i }))
     .filter((r) => {
       if (dir !== "all" && r.direction !== dir) return false;
-      // Merged "all efforts" rows carry their own variant's threshold.
+      // Merged "all efforts" / "all models" rows carry their own threshold.
       const t = r._thr ?? thr;
       if (t !== null && t !== undefined) {
         if (side === "below" && !(r.estimate !== null && r.estimate <= t)) return false;
@@ -458,6 +515,7 @@ function filteredRows() {
         const c = r.cot_covertness ?? "unmeasured";
         if (c !== cov) return false;
       }
+      if (!rowMatchesSearch(r, q)) return false;
       return true;
     });
 }
@@ -496,7 +554,8 @@ function badgeMeta(r) {
   }
   if (isMotivated()) {
     if (r.direction === "baseline") return { cls: "baseline", label: "baseline" };
-    if (r.direction === DATA.origin) {
+    const origin = r._origin ?? DATA.origin;
+    if (origin && r.direction === origin) {
       return { cls: "origin", label: `${r.direction} (own)` };
     }
     return { cls: "otherco", label: r.direction };
@@ -545,11 +604,16 @@ function renderList() {
       }
     }
     if (DATA.origin) txt += ` · own company: <b>${DATA.origin}</b>`;
+    else if (els.model.value === "__all__") txt += ` · <span class="dim">all models</span>`;
     if ((exp.covertness_categories || []).length
         && !DATA.rows.some((row) => row.cov_scope === true)) {
       txt += ` · <span class="dim">covertness monitor was not run for this selection</span>`;
     }
+    if (searchQuery) txt += ` · matching <b>“${searchQuery}”</b>`;
     els.summary.innerHTML = txt;
+  }
+  if (DATA.experiment === "giraffes" && searchQuery) {
+    els.summary.innerHTML += ` · matching <b>“${searchQuery}”</b>`;
   }
 
   els.list.replaceChildren(
@@ -688,8 +752,10 @@ function metaItems(r) {
   const pkLabels = exp.prompt_key_labels || {};
   const pkLabel = pkLabels[DATA.prompt_key]
     || DATA.prompt_key.replace(/^v1_/, "").replace(/_accurate$/, "");
-  const items = [["Model", DATA.display_name || DATA.model]];
-  // Merged "all efforts" view: say which reasoning level this row came from.
+  const items = [["Model",
+    r._display || r._model || DATA.display_name || DATA.model]];
+  // Merged "all efforts" / "all models" views: say which variant this row
+  // came from.
   if (r._effort) items.push(["Reasoning effort", r._effort]);
 
   if (DATA.experiment === "giraffes") {
@@ -759,22 +825,39 @@ function guidePanel(withClose) {
     "press <b>→</b> to read it, together with the exact prompt the model saw.";
   const p2 = document.createElement("p");
   p2.innerHTML = "The first three dropdowns at the top choose the experiment, " +
-    "model and reasoning level; the rest filter the list. The <b>←</b> and " +
-    "<b>→</b> keys move between rollouts.";
+    "model and reasoning level (<b>ALL</b> merges every model / every " +
+    "reasoning level). The rest filter the list. Search above the cards " +
+    "matches substrings in the CoT and answer (press <b>/</b>). The " +
+    "<b>←</b> and <b>→</b> keys move between rollouts.";
   box.append(p1, p2);
 
   if (exp && (exp.covertness_categories || []).length) {
     const field = COV_FIELD_LABEL[exp.id] || "CoT covertness";
     const note = COVERTNESS_JUDGE_NOTE[exp.id] || "";
+    const covLabels = COVERTNESS_LABELS[exp.id] || {};
+    const paper = PAPER_LABELS[exp.id] || {};
     const p3 = document.createElement("p");
-    p3.innerHTML = `<b>${field}</b>, the last dropdown, says whether the ` +
-      "model's reasoning discloses that its own values influenced the " +
-      `answer. An LLM judge <i>${note}</i> put each rollout into one of the ` +
-      "categories listed in that dropdown; the names are the ones used in " +
-      "the paper's figures, and “not measured” means the judge was not run " +
-      "on that rollout. For judged rollouts the detail view also shows the " +
-      "judge's rationale and prompt.";
+    p3.innerHTML = `<b>${field}</b> filters by whether the model's reasoning ` +
+      "discloses that its own values influenced the answer " +
+      `<i>${note}</i>. Categories (paper labels; judge name in parentheses):`;
     box.append(p3);
+    const ul = document.createElement("ul");
+    ul.className = "guide-cats";
+    for (const c of exp.covertness_categories) {
+      const li = document.createElement("li");
+      const name = paper[c] ? `${paper[c]} (${c})` : c;
+      const desc = covLabels[c] || "";
+      li.innerHTML = `<b>${name}</b> — ${desc}`;
+      ul.append(li);
+    }
+    const liNone = document.createElement("li");
+    liNone.innerHTML = "<b>not measured</b> — the judge was not run on this rollout";
+    ul.append(liNone);
+    box.append(ul);
+    const p4 = document.createElement("p");
+    p4.textContent = "For judged rollouts the detail view also shows the " +
+      "judge's rationale and prompt.";
+    box.append(p4);
   }
 
   const note = document.createElement("p");
@@ -987,7 +1070,24 @@ function renderDetail() {
 
 document.addEventListener("keydown", (e) => {
   const tag = (e.target.tagName || "").toLowerCase();
-  if (tag === "select" || tag === "input" || tag === "textarea") return;
+  const typing = tag === "select" || tag === "input" || tag === "textarea";
+  if (!typing && e.key === "/") {
+    e.preventDefault();
+    els.search.focus();
+    els.search.select();
+    return;
+  }
+  if (typing) {
+    if (e.key === "Escape" && e.target === els.search) {
+      els.search.blur();
+      if (searchQuery) {
+        els.search.value = "";
+        searchQuery = "";
+        onFilterChange();
+      }
+    }
+    return;
+  }
   if (e.key === "ArrowLeft") { e.preventDefault(); navigate(-1); }
   if (e.key === "ArrowRight") { e.preventDefault(); navigate(1); }
   if (e.key === "Escape" && helpOpen) { helpOpen = false; renderDetail(); }
@@ -998,7 +1098,19 @@ $("help-btn").addEventListener("click", () => {
   renderDetail();
 });
 
-els.experiment.addEventListener("change", onExperimentChange);
+els.search.addEventListener("input", () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    searchQuery = (els.search.value || "").trim().toLowerCase();
+    onFilterChange();
+  }, 150);
+});
+
+els.experiment.addEventListener("change", () => {
+  els.search.value = "";
+  searchQuery = "";
+  onExperimentChange();
+});
 els.model.addEventListener("change", onModelChange);
 els.effort.addEventListener("change", onEffortChange);
 els.promptKey.addEventListener("change", loadData);
