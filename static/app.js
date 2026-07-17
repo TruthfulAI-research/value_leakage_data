@@ -779,10 +779,8 @@ function guidePanel(withClose) {
 
   const note = document.createElement("p");
   note.className = "guide-note";
-  const per = exp && exp.sample_per_cell
-    ? ` of up to ${exp.sample_per_cell} rollouts per model and condition` : "";
-  note.innerHTML = `The browser shows a fixed random sample${per}; the ` +
-    'complete raw caches are in the <a href="https://github.com/' +
+  note.innerHTML = "The browser shows a fixed random sample of the rollouts; " +
+    'the complete raw caches are in the <a href="https://github.com/' +
     'TruthfulAI-research/value_leakage_data">data repository</a>.';
   box.append(note);
   return box;
