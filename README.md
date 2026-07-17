@@ -1,4 +1,4 @@
-# Value Leakage — data and project site
+# Data and project site: "Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values"
 
 This repository holds the model rollouts and judge outputs behind
 [*Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values*](https://github.com/TruthfulAI-research/value_leakage),
